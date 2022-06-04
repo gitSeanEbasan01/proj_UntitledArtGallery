@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .overallContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    /* height: 100%; */
 }
 
-.titleSection{
-    background-color: red;
-    position: relative;
-    height: 50vh;
-}
+
+
 
 .currentStudies{
     position: relative;
@@ -24,5 +26,11 @@
 .artWorks{
     position: relative;
     background-color: rgb(83, 54, 185);
+    height: 50vh;
+}
+
+.oldSketches{
+    position: relative;
+    background-color: aqua;
     height: 50vh;
 }
