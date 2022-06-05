@@ -60,10 +60,16 @@
         background-color: aqua;
     }
 
+    
 
     .text-untitled,
     .text-art-gallery{
         font-size: 100px;
+        font-weight: 500;
+    }
+
+    .text-space{
+        width: 25px;
     }
 
 
