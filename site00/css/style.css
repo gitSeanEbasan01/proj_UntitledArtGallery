@@ -7,11 +7,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250vh;
+}
+
 .overallContainer{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+
+    will-change: transform;
 }
 
 

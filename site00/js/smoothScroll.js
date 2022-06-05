@@ -1,4 +1,9 @@
-const overallContainer = document.querySelector('.overallContainer');
+const   overallContainer = document.querySelector('.overallContainer'),
+        title = document.querySelector('.tsTitle'),
+        text_Untitled = document.querySelector('.titleText_Untitled'),
+        text_artGallery = document.querySelector('.titleText_Art-Gallery');
+
+let titleHeight;
 
 let current = 0,
     target = 0;
@@ -18,7 +23,6 @@ function setupAnimation(){
     containerHeight = overallContainer.getBoundingClientRect().height;
     document.body.style.height = `${containerHeight}px`;
     smoothScroll();
-
 }
 
 
@@ -28,8 +32,12 @@ function smoothScroll(){
     target = window.scrollY;
 
     setTransform(overallContainer, `translateY(${-current}px)`);
+    setTransform(text_Untitled, `translateY(${current * .3}px)`);
+    setTransform(text_artGallery, `translateY(${current * .2}px)`);
 
     requestAnimationFrame(smoothScroll);
 }
+
+
 
 setupAnimation();
