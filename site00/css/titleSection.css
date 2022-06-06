@@ -1,12 +1,10 @@
 
-@media (min-width: 900px) {
+@media (min-width: 200px) {
 
     .titleSection{
         position: relative;
         width: 100%;
         height: 100vh;
-    
-        background-color: gray;
     }
 
     .tsTitle{
@@ -15,14 +13,85 @@
         left: 5%;
         width: 90%;
         height: 50%;
+        z-index: -1;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        background-color: red;
+        background-color: #fff;
         will-change: transform;
+
+
+    }
+    .tBorderTopLeft{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .tBorderTopRight{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .tBorderBottomLeft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .tBorderBottomRight{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .tBorderTopLeft, .tBorderTopRight,
+    .tBorderBottomLeft, .tBorderBottomRight{
+        width: 0;
+        height: 1px;
+        opacity: 1;
+        z-index: 2;
+        background-color: black;
+        transition: 2s;
+    }
+    .tsTitle.borderActive > .tBorderTopLeft, 
+    .tsTitle.borderActive > .tBorderTopRight,
+    .tsTitle.borderActive > .tBorderBottomLeft, 
+    .tsTitle.borderActive > .tBorderBottomRight{
+        width: 50%;
+    }
+    .tsTitle.borderFade > .tBorderTopLeft, 
+    .tsTitle.borderFade > .tBorderTopRight,
+    .tsTitle.borderFade > .tBorderBottomLeft, 
+    .tsTitle.borderFade > .tBorderBottomRight{
+        opacity: 0;
+    }
+
+    .tBorderLeft,
+    .tBorderRight{
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        background-color: black;
+        transition: 2s;
+    }
+    .tBorderLeft{
+        top: 0;
+        left: 0;
+    }
+    .tBorderRight{
+        top: 0;
+        right: 0;
+    }
+    .tsTitle.borderActive > .tBorderLeft,
+    .tsTitle.borderActive > .tBorderRight{
+        opacity: 1;
+    }
+    .tsTitle.borderFade > .tBorderLeft,
+    .tsTitle.borderFade > .tBorderRight{
+        opacity: 0;
     }
 
 
@@ -33,6 +102,7 @@
         right: 5%;
         width: 50%;
         height: 30%;
+        z-index: 1;
 
         /* For its children */
         display: flex;
@@ -40,8 +110,79 @@
         justify-content: center;
         align-items: center;
         
-        /* background-color: blue; */
+        /* ------------------------------------------------ */
+        mix-blend-mode: difference;
+        color: white;
     }
+    .uBorderTopLeft{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .uBorderTopRight{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .uBorderBottomLeft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .uBorderBottomRight{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .uBorderTopLeft, .uBorderTopRight,
+    .uBorderBottomLeft, .uBorderBottomRight{
+        width: 0;
+        height: 1px;
+        opacity: 1;
+        background-color: #fff;
+        transition: 2s;
+    }
+    .titleText_Untitled.borderActive > .uBorderTopLeft, 
+    .titleText_Untitled.borderActive > .uBorderTopRight,
+    .titleText_Untitled.borderActive > .uBorderBottomLeft, 
+    .titleText_Untitled.borderActive > .uBorderBottomRight{
+        width: 50%;
+    }
+    .titleText_Untitled.borderFade > .uBorderTopLeft, 
+    .titleText_Untitled.borderFade > .uBorderTopRight,
+    .titleText_Untitled.borderFade > .uBorderBottomLeft, 
+    .titleText_Untitled.borderFade > .uBorderBottomRight{
+        opacity: 0;
+    }
+
+    .uBorderLeft,
+    .uBorderRight{
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        opacity: 0;
+        background-color: #fff;
+        transition: 2s;
+    }
+    .uBorderLeft{
+        top: 0;
+        left: 0;
+    }
+    .uBorderRight{
+        top: 0;
+        right: 0;
+    }
+    .titleText_Untitled.borderActive > .uBorderLeft,
+    .titleText_Untitled.borderActive > .uBorderRight{
+        opacity: 1;
+    }
+    .titleText_Untitled.borderFade > .uBorderLeft,
+    .titleText_Untitled.borderFade > .uBorderRight{
+        opacity: 0;
+    }
+    
+
+
     .titleText_Art-Gallery{
         /* Overall Area */
         position: absolute;
@@ -49,24 +190,118 @@
         right: 5%;
         width: 60%;
         height: 30%;
+        z-index: 1;
         
         /* For its children */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
-        /* background-color: aqua; */
+
+
+        /* ------------------------------------------------ */
+        mix-blend-mode: difference;
+        color: white;
+    }
+    .agBorderTopLeft{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .agBorderTopRight{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .agBorderBottomLeft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .agBorderBottomRight{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .agBorderTopLeft, .agBorderTopRight,
+    .agBorderBottomLeft, .agBorderBottomRight{
+        width: 0;
+        height: 1px;
+        opacity: 1;
+        background-color: #fff;
+        transition: 2s;
+    }
+    .titleText_Art-Gallery.borderActive > .agBorderTopLeft, 
+    .titleText_Art-Gallery.borderActive > .agBorderTopRight,
+    .titleText_Art-Gallery.borderActive > .agBorderBottomLeft, 
+    .titleText_Art-Gallery.borderActive > .agBorderBottomRight{
+        width: 50%;
+    }
+    .titleText_Art-Gallery.borderFade > .agBorderTopLeft, 
+    .titleText_Art-Gallery.borderFade > .agBorderTopRight,
+    .titleText_Art-Gallery.borderFade > .agBorderBottomLeft, 
+    .titleText_Art-Gallery.borderFade > .agBorderBottomRight{
+        opacity: 0;
     }
 
-    
+    .agBorderLeft,
+    .agBorderRight{
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        opacity: 0;
+        background-color: #fff;
+        transition: 2s;
+    }
+    .agBorderLeft{
+        top: 0;
+        left: 0;
+    }
+    .agBorderRight{
+        top: 0;
+        right: 0;
+    }
+
+    .titleText_Art-Gallery.borderActive > .agBorderLeft,
+    .titleText_Art-Gallery.borderActive > .agBorderRight{
+        opacity: 1;
+    }
+    .titleText_Art-Gallery.borderFade > .agBorderLeft,
+    .titleText_Art-Gallery.borderFade > .agBorderRight{
+        opacity: 0;
+    }
 
 
 
-    .text-untitled,
-    .text-art-gallery{
+
+
+
+
+    .text-untitled{
+        position: relative;
         font-size: 100px;
         font-weight: 500;
+
+        top: -50px;
+        opacity: 0;
+        transition: 1.5s;
+    }
+    .text-untitled.active{
+        top: 0;
+        opacity: 1;
+    }
+    .text-art-gallery{
+        position: relative;
+        font-size: 100px;
+        font-weight: 500;
+
+        top: 50px;
+        opacity: 0;
+        transition: 1.5s;
+    }
+    .text-art-gallery.active{
+        top: 0;
+        opacity: 1;
     }
 
     .text-space{
@@ -77,16 +312,154 @@
 
 
 
+
+
+
+
+
+
     .tsTitleDescription{
         position: absolute;
-        top: 83%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 68%;
+        left: 0;
         width: 100%;
         height: 30%;
-
-        background-color: violet;
     }
 
-}
+    .titleDescription_Container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 60%;
+    }
 
+    .description{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 40%;
+        height: 19%;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .description > p{
+        position: relative;
+        top: -20px;
+        opacity: 0;
+        transition: 1s ease-in-out 2s;
+        
+        padding-left: 5%;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .description.active > p{
+        top: 0;
+        opacity: 1;
+    }
+
+
+    .descriptionBorder{
+        position: absolute;
+        top: 49%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-radius: 50%;
+    }
+    .borderLeftSide{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 0;
+        height: 100%;
+        opacity: 1;
+        background-color: black;
+        transition: 2s;
+    }
+    .borderRightSide{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        opacity: 1;
+        background-color: black;
+        transition: 2s;
+    }
+    .descriptionBorder.active > .borderLeftSide,
+    .descriptionBorder.active > .borderRightSide{
+        width: 50%;
+    }
+
+
+    .name{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 30%;
+        height: 20%;
+
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .name > p{
+        position: relative;
+        top: 20px;
+        opacity: 0;
+        transition: 1s ease-in-out 2.5s;
+        
+        padding-right: 5%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .name.active > p{
+        top: 0;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+    .titleBackgroundImage{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 67%;
+        height: 100%;
+        z-index: .5;
+        overflow: hidden;
+    }
+
+    .titleBackgroundImage > .img{
+        background-image: url(/assets/img/pexels-skylar-kang-6368907.jpg);
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-size: cover;
+        background-position: center;
+        /* transform: scale(1.3); */
+        transition: 2s;
+    }
+    
+    .titleBackgroundImage.active > .img{
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+    
+}

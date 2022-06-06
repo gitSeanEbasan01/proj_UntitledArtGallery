@@ -8,7 +8,7 @@ let titleHeight;
 let current = 0,
     target = 0;
 
-const ease = 0.06;
+const ease = 0.1;
 
 function lerp(start, end, t) {
     return start * (1-t) + end * t;
@@ -32,8 +32,8 @@ function smoothScroll(){
     target = window.scrollY;
 
     setTransform(overallContainer, `translateY(${-current}px)`);
-    setTransform(text_Untitled, `translateY(${current * .3}px)`);
-    setTransform(text_artGallery, `translateY(${current * .2}px)`);
+    setTransform(text_Untitled, `translateY(${current * .15}px)`);
+    setTransform(text_artGallery, `translateY(${current * .1}px)`);
 
     requestAnimationFrame(smoothScroll);
 }
