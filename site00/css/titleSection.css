@@ -1,5 +1,5 @@
 
-@media (min-width: 700px) {
+@media (min-width: 200px) {
 
     .titleSection{
         position: relative;
@@ -140,19 +140,21 @@
         height: 1px;
         opacity: 1;
         background-color: #fff;
-        transition: 2s;
+        /* transition: width 2s; */
     }
     .titleText_Untitled.borderActive > .uBorderTopLeft, 
     .titleText_Untitled.borderActive > .uBorderTopRight,
     .titleText_Untitled.borderActive > .uBorderBottomLeft, 
     .titleText_Untitled.borderActive > .uBorderBottomRight{
         width: 50%;
+        transition: 2s;
     }
     .titleText_Untitled.borderFade > .uBorderTopLeft, 
     .titleText_Untitled.borderFade > .uBorderTopRight,
     .titleText_Untitled.borderFade > .uBorderBottomLeft, 
     .titleText_Untitled.borderFade > .uBorderBottomRight{
         opacity: 0;
+        transition: 2s;
     }
 
     .uBorderLeft,
@@ -162,7 +164,7 @@
         height: 100%;
         opacity: 0;
         background-color: #fff;
-        transition: 2s;
+        /* transition: 2s; */
     }
     .uBorderLeft{
         top: 0;
@@ -175,10 +177,12 @@
     .titleText_Untitled.borderActive > .uBorderLeft,
     .titleText_Untitled.borderActive > .uBorderRight{
         opacity: 1;
+        transition: 2s;
     }
     .titleText_Untitled.borderFade > .uBorderLeft,
     .titleText_Untitled.borderFade > .uBorderRight{
         opacity: 0;
+        transition: 2s;
     }
     
 
@@ -229,19 +233,21 @@
         height: 1px;
         opacity: 1;
         background-color: #fff;
-        transition: 2s;
+        /* transition: 2s; */
     }
     .titleText_Art-Gallery.borderActive > .agBorderTopLeft, 
     .titleText_Art-Gallery.borderActive > .agBorderTopRight,
     .titleText_Art-Gallery.borderActive > .agBorderBottomLeft, 
     .titleText_Art-Gallery.borderActive > .agBorderBottomRight{
         width: 50%;
+        transition: 2s;
     }
     .titleText_Art-Gallery.borderFade > .agBorderTopLeft, 
     .titleText_Art-Gallery.borderFade > .agBorderTopRight,
     .titleText_Art-Gallery.borderFade > .agBorderBottomLeft, 
     .titleText_Art-Gallery.borderFade > .agBorderBottomRight{
         opacity: 0;
+        transition: 2s;
     }
 
     .agBorderLeft,
@@ -265,10 +271,12 @@
     .titleText_Art-Gallery.borderActive > .agBorderLeft,
     .titleText_Art-Gallery.borderActive > .agBorderRight{
         opacity: 1;
+        transition: 2s;
     }
     .titleText_Art-Gallery.borderFade > .agBorderLeft,
     .titleText_Art-Gallery.borderFade > .agBorderRight{
         opacity: 0;
+        transition: 2s;
     }
 
 
@@ -284,11 +292,12 @@
 
         top: -50px;
         opacity: 0;
-        transition: 1.5s;
+        /* transition: 1.5s; */
     }
     .text-untitled.active{
         top: 0;
         opacity: 1;
+        transition: 1.5s;
     }
     .text-art-gallery{
         position: relative;
@@ -297,11 +306,12 @@
 
         top: 50px;
         opacity: 0;
-        transition: 1.5s;
+        /* transition: 1.5s; */
     }
     .text-art-gallery.active{
         top: 0;
         opacity: 1;
+        transition: 1.5s;
     }
 
     .text-space{
@@ -350,7 +360,7 @@
         position: relative;
         top: -20px;
         opacity: 0;
-        transition: 1s ease-in-out 2s;
+        /* transition: 1s ease-in-out 2s; */
         
         padding-left: 5%;
         font-size: 20px;
@@ -359,6 +369,7 @@
     .description.active > p{
         top: 0;
         opacity: 1;
+        transition: 1s ease-in-out 2s;
     }
 
 
@@ -378,7 +389,7 @@
         height: 100%;
         opacity: 1;
         background-color: black;
-        transition: 2s;
+        /* transition: 2s; */
     }
     .borderRightSide{
         position: absolute;
@@ -388,11 +399,12 @@
         height: 100%;
         opacity: 1;
         background-color: black;
-        transition: 2s;
+        /* transition: 2s; */
     }
     .descriptionBorder.active > .borderLeftSide,
     .descriptionBorder.active > .borderRightSide{
         width: 50%;
+        transition: 2s;
     }
 
 
@@ -411,7 +423,7 @@
         position: relative;
         top: 20px;
         opacity: 0;
-        transition: 1s ease-in-out 2.5s;
+        /* transition: 1s ease-in-out 2.5s; */
         
         padding-right: 5%;
         font-size: 20px;
@@ -420,6 +432,7 @@
     .name.active > p{
         top: 0;
         opacity: 1;
+        transition: 1s ease-in-out 2.5s;
     }
 
 
@@ -454,11 +467,12 @@
         background-size: cover;
         background-position: center;
         /* transform: scale(1.3); */
-        transition: 2s;
+        /* transition: 2s; */
     }
     
     .titleBackgroundImage.active > .img{
         opacity: 1;
+        transition: 2s;
         /* transform: scale(1); */
     }
     
