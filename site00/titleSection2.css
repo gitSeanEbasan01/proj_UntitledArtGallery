@@ -439,7 +439,7 @@
     overflow: hidden;
 }
 
-.titleBackgroundImage .img{
+.img{
     background-image: url('assets/img/notebook.jpeg');
     
     position: absolute;
