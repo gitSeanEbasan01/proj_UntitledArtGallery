@@ -440,7 +440,7 @@
 }
 
 .titleBackgroundImage .img{
-    background-image: url(assets/img/notebook.jpeg);
+    background-image: url('assets/img/notebook.jpeg');
     
     position: absolute;
     top: 0;
