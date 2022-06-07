@@ -443,7 +443,7 @@
     }
 
     .titleBackgroundImage .img{
-        background-image: url(/assets/img/pexels-skylar-kang-6368907.jpeg);
+        background-image: url('img/notebook.jpeg');
         
         position: absolute;
         top: 0;
