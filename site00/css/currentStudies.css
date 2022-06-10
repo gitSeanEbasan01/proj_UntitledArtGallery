@@ -1,0 +1,126 @@
+
+@media (min-width: 200px) {
+
+    .currentStudies{
+        position: relative;
+        /* background-color: rgb(130, 238, 152); */
+        width: 100%;
+        height: 70vh;
+    }
+    
+
+
+
+    .csInformation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+
+        /* background-color: green; */
+    }
+    
+
+
+
+    .csTitle{
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        height: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: aqua; */
+    }
+    .csTitle > h3{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    
+    
+
+
+
+    .csDescription{
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        width: 45%;
+        height: 15%;
+
+        /* background-color: aquamarine; */
+    }
+    .csDescription > p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        font-size: 15px;
+        font-weight: 200;
+
+        /* background-color: blueviolet; */
+    }
+
+
+
+
+
+
+    .csPageButton{
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        width: 100%;
+        height: 10%;
+
+        /* background-color: yellowgreen; */
+    }
+    .csPageButton > .button{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 45%;
+        height: 50%;
+        border: black solid 1px;
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .csPageButton > .button > .cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        border-radius: 20px;
+
+        background-color: rgb(51, 51, 51);
+        transition: width .2s;
+    }
+    .csPageButton > .button:hover > .cover{
+        width: 100%;
+    }
+    
+    
+    .csPageButton > .button > a{
+        color: inherit;
+        font-size: 15px;
+        font-weight: 100;
+        word-spacing: 5px;
+        transition: color .2s;
+    }
+    .csPageButton > .button:hover > a{
+        color: white;
+    }
+    
+}

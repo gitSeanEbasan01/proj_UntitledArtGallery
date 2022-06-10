@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 html, body{
@@ -16,7 +17,7 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 300vh;
+    height: 320vh;
     /* height: 667px; */
     /* height: calc(667*3)px; */
 }
@@ -35,11 +36,7 @@ main{
 
 
 
-.currentStudies{
-    position: relative;
-    background-color: violet;
-    height: 50vh;
-}
+
 
 .artWorks{
     position: relative;
