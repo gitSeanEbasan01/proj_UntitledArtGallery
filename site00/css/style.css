@@ -8,8 +8,15 @@
     text-decoration: none;
 }
 
+:root{
+    --overall-height: 320vh;
+}
+
 html, body{
-    background-color: #fff;
+    width: 100%;
+    height: var(--overall-height);
+    overscroll-behavior: none;
+    overflow: hidden;
 }
 
 main{
@@ -17,7 +24,7 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 320vh;
+    height: var(--overall-height);
     /* height: 667px; */
     /* height: calc(667*3)px; */
 }
