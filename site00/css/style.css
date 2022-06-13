@@ -16,7 +16,6 @@ html, body{
     width: 100%;
     height: var(--overall-height);
     overscroll-behavior: none;
-    overflow: hidden;
 }
 
 main{

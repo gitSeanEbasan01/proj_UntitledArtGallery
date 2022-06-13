@@ -1,4 +1,4 @@
-const   csGallery = document.querySelector('.cs-gallery'),
+const   csGallery = document.querySelector('.csGallery'),
         csgContent = document.querySelector('.csgContent'),
         images = [...document.querySelectorAll('.csgImg')],
         
@@ -10,6 +10,20 @@ const   csGallery = document.querySelector('.cs-gallery'),
 
 let gsCurrent = 0,
     slide = 0;
+
+
+
+
+const   doc = document.documentElement,
+        appWidth = () => {
+            doc.style.setProperty('--app-width', `${galleryWidth}px`);
+            gsCurrent = -slide * galleryWidth;
+            csgContent.style.transform = `translateY(${gsCurrent}px)`;
+        };
+window.addEventListener('resize', appWidth);
+appWidth();
+    
+
 
 
 csGallery.addEventListener('mousedown', startMouseDown);
@@ -33,7 +47,7 @@ function startMouseDown(e){
 function startMouseUp(e){
     initialEnd = Date.now();
     endX = e.clientX;
-    // console.log(endX - initialX);
+    console.log(endX - initialX);
     if(initialEnd - initialStart < 800){
         swipe();
     }
@@ -42,16 +56,20 @@ function startMouseUp(e){
 
 function swipe(){
     if(endX - initialX < -50){
-        if(gsCurrent !== -(contentWidth * 4)){
+        if(gsCurrent !== -(galleryWidth * 4)){
 
-            if(gsCurrent >= -(contentWidth * 2)){
-                console.log("can go right");
-                gsCurrent -= contentWidth;
-            }
-            else if(gsCurrent < -(contentWidth * 2) && gsCurrent >= -(contentWidth * 3)){
-                console.log("go small right");
-                gsCurrent -= contentWidth * .75;
-            }
+            // if(gsCurrent >= -(contentWidth * 2)){
+            //     console.log("can go right");
+            //     gsCurrent -= contentWidth;
+            //     slide++;
+            // }
+            // else if(gsCurrent < -(contentWidth * 2) && gsCurrent >= -(contentWidth * 3)){
+            //     console.log("go small right");
+            //     gsCurrent -= contentWidth * .75;
+            // }
+            
+            gsCurrent -= galleryWidth;
+            slide++;
             
         }
     }
@@ -59,16 +77,19 @@ function swipe(){
     else if(endX - initialX > 50){
         if(gsCurrent !== 0){
 
-            if(gsCurrent < -(contentWidth * 3)){
-                console.log("go small left");
-                gsCurrent += contentWidth * .75;
-            }
-            else if(gsCurrent >= -(contentWidth * 3) && gsCurrent < 0){
-                console.log("can go left");
-                gsCurrent += contentWidth;
-            }
+            // if(gsCurrent < -(contentWidth * 3)){
+            //     console.log("go small left");
+            //     gsCurrent += contentWidth * .75;
+            //     slide--;
+            // }
+            // else if(gsCurrent >= -(contentWidth * 3) && gsCurrent < 0){
+            //     console.log("can go left");
+            //     gsCurrent += contentWidth;
+            // }
+
+            gsCurrent += galleryWidth;
+            slide--;
             
-            // gsCurrent += contentWidth;
         }
     }
 
