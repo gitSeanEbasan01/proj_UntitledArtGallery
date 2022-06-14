@@ -13,6 +13,7 @@ I'll be utilizing the few things I learned in Web Development in the past 2 mont
   - [x] Title description
 - [ ] Shorthand section...
 - [ ] Footer
+- [ ] Observer anim
 - [ ] Navbar + hamburger
 - [ ] Media Query | Make website look good on other devices(phones, tablets, etc.)
 <br />
