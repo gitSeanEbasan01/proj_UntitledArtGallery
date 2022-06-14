@@ -14,23 +14,29 @@ let gsCurrent = 0,
 const   doc = document.documentElement,
         appWidth = () => {
             galleryWidth = mainGallery.getBoundingClientRect().width;
-            doc.style.setProperty('--app-width', `${galleryWidth}px`);
-            gsCurrent = -slide * galleryWidth;
+            contentWidth = csgContent.getBoundingClientRect().width;
+
+            doc.style.setProperty('--app-width', `${contentWidth}px`);
+            gsCurrent = -slide * contentWidth;
             csgContent.style.transform = `translateX(${gsCurrent}px)`;
         };
 window.addEventListener('resize', appWidth);
 appWidth();
-
-// const   doc = document.documentElement,
-//         appHeight = () => {
-//             galleryHeight = mainGallery.getBoundingClientRect().height
-//             doc.style.setProperty('--app-height', `${galleryHeight}px`);
-//             gsCurrent = -slide * galleryHeight;
-//             csgContent.style.transform = `translateY(${gsCurrent}px)`;
-//         };
-// window.addEventListener('resize', appHeight);
-// appHeight();
     
+
+
+
+let wrCurrent = 0,
+    wrTarget = 0,
+    wrEase = 0.5;
+
+
+
+
+function lerp(start, end, t) {
+    return start * (1-t) + end * t;
+}
+
     
 
 mainGallery.addEventListener('mousedown', startMouseDown);
@@ -57,7 +63,7 @@ function startMouseUp(e){
     endX = e.clientX;
     endY = e.clientY;
     console.log(endX - initialX);
-    if(initialEnd - initialStart < 800 && initialEnd - initialStart > 0){
+    if(initialEnd - initialStart < 800){
         swipe();
     }
 }
@@ -65,35 +71,45 @@ function startMouseUp(e){
 function swipe(){
 
     if(endX - initialX < -50){
-        if(gsCurrent !== -(galleryWidth * 4)){
-            gsCurrent -= galleryWidth;
-            slide++;
+        if(gsCurrent !== -(contentWidth * 4)){
+
+            if(gsCurrent >= -(contentWidth * 0)){
+                gsCurrent -= contentWidth;
+                slide++;
+                csgContent.style.left = `${10}%`;
+            }
+            else if(gsCurrent < -(contentWidth * 0) && gsCurrent > -(contentWidth * 3)){
+                gsCurrent -= contentWidth;
+                slide++;
+            }
+            else if(gsCurrent < -(contentWidth * 2) && gsCurrent == -(contentWidth * 3)){
+                gsCurrent -= contentWidth;
+                slide++;
+                csgContent.style.left = `${20}%`;
+            }
         }
     }
 
     else if(endX - initialX > 50){
         if(gsCurrent !== 0){
-            gsCurrent += galleryWidth;
-            slide--;
+
+            if(gsCurrent < -(contentWidth * 3)){
+                gsCurrent += contentWidth;
+                slide--;
+                csgContent.style.left = `${10}%`;
+            }
+            else if(gsCurrent > -(contentWidth * 4) && gsCurrent < -(contentWidth * 1)){
+                gsCurrent += contentWidth;
+                slide--;
+            }
+            else if(gsCurrent > -(contentWidth * 2) && gsCurrent == -(contentWidth * 1)){
+                gsCurrent += contentWidth;
+                slide--;
+                csgContent.style.left = `${0}%`;
+            }
         }
     }
 
-    // if(endY - initialY < -50){
-    //     if(gsCurrent !== -(galleryHeight * 4)){
-    //         gsCurrent -= galleryHeight;
-    //         slide++;
-    //     }
-    // }
-
-    // else if(endY - initialY > 50){
-    //     if(gsCurrent !== 0){
-    //         gsCurrent += galleryHeight;
-    //         slide--;
-    //     }
-    // }
-
-
     csgContent.style.transform = `translateX(${gsCurrent}px)`;
-    // csgContent.style.transform = `translateY(${gsCurrent}px)`;
     
 }

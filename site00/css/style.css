@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --overall-height: 320vh;
 }
