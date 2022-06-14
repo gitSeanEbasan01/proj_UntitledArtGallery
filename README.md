@@ -14,6 +14,7 @@ I'll be utilizing the few things I learned in Web Development in the past 2 mont
 - [ ] Shorthand section...
 - [ ] Footer
 - [ ] Navbar + hamburger
+- [ ] Media Query | Make website look good on other devices(phones, tablets, etc.)
 <br />
 
 - [ ] Other Pages
