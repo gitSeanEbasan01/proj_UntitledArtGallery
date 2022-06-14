@@ -315,6 +315,7 @@
         transform: scale(1);
         transition: .5s;
         cursor: pointer;
+        pointer-events: none;
         
         /* background-color: blueviolet; */
     }
