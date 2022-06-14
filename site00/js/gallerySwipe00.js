@@ -4,7 +4,8 @@ const   mainGallery = document.querySelector('.csGallery'),
 
 
 csgImages.forEach((image, idx) => {
-    image.style.backgroundImage = `url(./img00/${idx + 1}.jpg)`;
+    image.style.backgroundImage = `url(../img00/${idx + 1}.JPG)`;
+    // change --
 })
 
 
