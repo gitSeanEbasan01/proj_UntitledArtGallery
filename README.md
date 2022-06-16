@@ -16,7 +16,7 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 - [ ] Footer
 - [ ] Observer anim
 - [ ] Navbar + hamburger
-- [ ] Media Query | Make website look good on other devices(phones, tablets, etc.)
+- [ ] Media Query | Make website look good on different screen resolutions and on other devices as well(phones, tablets, etc.)
 <br />
 
 - [ ] Other Pages
