@@ -182,4 +182,76 @@
         background-color: black;
     }
     
+
+
+
+
+    /* ------------------------------------ csGallery ------------------------------------ */
+
+
+
+
+
+    :root{
+        --app-awwidth: 100%;
+        --app-awheight: 100%;
+    }
+    
+
+    .awGallery{
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+        cursor: grab;
+
+        /* background-color: red; */
+    }
+    
+    
+    .awgContent{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        transition: .5s;
+        will-change: transform;
+
+        display: flex;
+
+        /* background-color: blue; */
+    }
+
+    .awgSection{
+        position: relative;
+        width: var(--app-awwidth);
+        height: var(--app-awheight);
+        overflow: hidden;
+
+        flex: none;
+
+        /* background-color: aqua; */
+    }
+
+    .awgImg{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+
+        background-size: cover;
+        background-position: center;
+        transform: scale(1);
+        transition: .5s;
+        cursor: pointer;
+        pointer-events: none;
+        
+        /* background-color: blueviolet; */
+    }
+    
+    
 }

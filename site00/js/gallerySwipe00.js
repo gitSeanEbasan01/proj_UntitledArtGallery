@@ -11,30 +11,14 @@ let gsCurrent = 0,
 
 const   doc = document.documentElement,
         appWidth = () => {
-            galleryWidth = mainGallery.getBoundingClientRect().width;
             contentWidth = csgContent.getBoundingClientRect().width;
 
-            doc.style.setProperty('--app-width', `${contentWidth}px`);
+            doc.style.setProperty('--app-cswidth', `${contentWidth}px`);
             gsCurrent = -slide * contentWidth;
             csgContent.style.transform = `translateX(${gsCurrent}px)`;
         };
 window.addEventListener('resize', appWidth);
 appWidth();
-    
-
-
-
-let wrCurrent = 0,
-    wrTarget = 0,
-    wrEase = 0.5;
-
-
-
-
-function lerp(start, end, t) {
-    return start * (1-t) + end * t;
-}
-
     
 
 mainGallery.addEventListener('mousedown', startMouseDown);

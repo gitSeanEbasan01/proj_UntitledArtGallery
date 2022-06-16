@@ -191,77 +191,12 @@
     /* ------------------------------------ csGallery ------------------------------------ */
 
 
-    /* :root{
-        --app-width: 100%;
-    }
-
-
-    .csGallery{
-        position: absolute;
-        top: 0;
-        left: 30%;
-        width: 70%;
-        height: 100%;
-        overflow: hidden;
-        cursor: grab;
-
-        background-color: red;
-    }
-
-    .csgContent{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        will-change: transform;
-
-        display: flex;
-
-        background-color: blue;
-    }
-
-    .csgSection{
-        position: relative;
-        width: var(--app-width);
-        height: 100%;
-        overflow: hidden;
-
-        flex: none;
-
-        background-color: blueviolet;
-    }
-
-    .csgImg{
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        width: 90%;
-        height: 90%;
-
-        background-size: cover;
-        background-position: center;
-        transform: scale(1);
-        transition: .5s;
-        cursor: pointer;
-
-        background-color: aqua;
-    } */
-
-
-
-
-
-
-
-
 
 
 
     :root{
-        --app-width: 100%;
-        --app-height: 100%;
+        --app-cswidth: 100%;
+        --app-csheight: 100%;
     }
     
 
@@ -293,8 +228,8 @@
 
     .csgSection{
         position: relative;
-        width: var(--app-width);
-        height: var(--app-height);
+        width: var(--app-cswidth);
+        height: var(--app-csheight);
         overflow: hidden;
 
         flex: none;
