@@ -13,7 +13,7 @@
 }
 
 :root{
-    --overall-height: 320vh;
+    --overall-height: 340vh;
 }
 
 html, body{
@@ -49,11 +49,7 @@ main{
 
 
 
-.artWorks{
-    position: relative;
-    background-color: rgb(83, 54, 185);
-    height: 50vh;
-}
+
 
 .oldSketches{
     position: relative;

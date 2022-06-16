@@ -1,0 +1,185 @@
+@media (min-width: 200px) {
+
+    .artWorks{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+    }
+
+
+
+
+    .awInformation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+
+        /* background-color: green; */
+    }
+
+
+
+
+    .awTitle{
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        height: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: aqua; */
+    }
+    .awTitle > h3{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    
+
+
+
+
+
+    .awDescription{
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        width: 45%;
+        height: 15%;
+    }
+    .awDescription > p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+
+
+
+
+
+    .awPageButton{
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        width: 100%;
+        height: 10%;
+    }
+    .awPageButton > .button{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 45%;
+        height: 50%;
+        border: black solid 1px;
+        border-radius: 20px;
+        color: inherit;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .awPageButton > .button > .cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        border-radius: 20px;
+
+        background-color: rgb(51, 51, 51);
+        transition: width .2s;
+    }
+    .awPageButton > .button:hover > .cover{
+        width: 100%;
+    }
+    
+    
+
+    .awPageButton > .button > .title{
+        font-size: 15px;
+        font-weight: 100;
+        word-spacing: 5px;
+        color: black;
+        transition: color .2s;
+    }
+    .awPageButton > .button:hover > .title{
+        color: white;
+    }
+
+
+    .awPageButton > .button > .uit{
+        font-size: 20px;
+        font-weight: 100;
+        transition: color .2s;
+    }
+    .awPageButton > .button:hover > .uit{
+        color: white;
+    }
+    
+
+    
+
+
+
+
+    /* ------------------------------------ csBorder ------------------------------------ */
+
+
+
+
+    .awBorder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+
+        pointer-events: none;
+    }
+    
+    .awbRight{
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 70%;
+        height: 1px;
+        opacity: .5;
+
+        background-color: black;
+    }
+    .awbLeft{
+        position: absolute;
+        top: 0;
+        right: 70%;
+        width: 30%;
+        height: 1px;
+        opacity: .5;
+
+        background-color: black;
+    }
+    .awbMid{
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 1px;
+        height: 100%;
+        opacity: .5;
+
+        background-color: black;
+    }
+    
+}
