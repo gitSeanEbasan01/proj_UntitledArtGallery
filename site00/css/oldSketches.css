@@ -1,28 +1,31 @@
+
 @media (min-width: 200px) {
 
-    .artWorks{
+    .oldSketches{
         position: relative;
-        width: 100%;
+        /* background-color: rgb(69, 151, 106); */
         height: 70vh;
     }
 
 
 
 
-    .awInformation{
+
+
+
+    .osInformation{
         position: absolute;
         top: 0;
         left: 0;
         width: 30%;
         height: 100%;
 
-        /* background-color: green; */
+        /* background-color: blue; */
     }
 
 
 
-
-    .awTitle{
+    .osTitle{
         position: absolute;
         top: 5%;
         left: 0;
@@ -35,46 +38,53 @@
 
         /* background-color: aqua; */
     }
-    .awTitle > h3{
+    .osTitle > h3{
         font-size: 30px;
         font-weight: 200;
     }
-    
 
 
 
 
 
-    .awDescription{
+
+
+    .osDescription{
         position: absolute;
         bottom: 15%;
         left: 10%;
         width: 180px;
         height: 15%;
+
+        /* background-color: blueviolet; */
     }
-    .awDescription > p{
+    .osDescription > p{
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        
+
         font-size: 15px;
         font-weight: 200;
     }
-    
 
 
 
 
 
-    .awPageButton{
+
+
+
+
+
+    .osPageButton{
         position: absolute;
         bottom: 5%;
         left: 0;
         width: 100%;
         height: 10%;
     }
-    .awPageButton > .button{
+    .osPageButton > .button{
         position: absolute;
         top: 25%;
         left: 10%;
@@ -89,7 +99,7 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    .awPageButton > .button > .cover{
+    .osPageButton > .button > .cover{
         position: absolute;
         top: 0;
         left: 0;
@@ -101,45 +111,45 @@
         background-color: rgb(51, 51, 51);
         transition: width .2s;
     }
-    .awPageButton > .button:hover > .cover{
+    .osPageButton > .button:hover > .cover{
         width: 100%;
     }
     
     
 
-    .awPageButton > .button > .title{
+    .osPageButton > .button > .title{
         font-size: 15px;
         font-weight: 100;
         word-spacing: 5px;
         color: black;
         transition: color .2s;
     }
-    .awPageButton > .button:hover > .title{
+    .osPageButton > .button:hover > .title{
         color: white;
     }
 
 
-    .awPageButton > .button > .uit{
+    .osPageButton > .button > .uit{
         font-size: 20px;
         font-weight: 100;
         transition: color .2s;
     }
-    .awPageButton > .button:hover > .uit{
+    .osPageButton > .button:hover > .uit{
         color: white;
     }
     
-
     
 
 
 
 
-    /* ------------------------------------ csBorder ------------------------------------ */
+
+    /* ------------------------------------ osBorder ------------------------------------ */
 
 
 
 
-    .awBorder{
+    .osBorder{
         position: absolute;
         top: 0;
         left: 0;
@@ -151,7 +161,7 @@
         pointer-events: none;
     }
     
-    .awbRight{
+    .osbRight{
         position: absolute;
         top: 0;
         left: 30%;
@@ -161,7 +171,7 @@
 
         background-color: black;
     }
-    .awbLeft{
+    .osbLeft{
         position: absolute;
         top: 0;
         right: 70%;
@@ -171,7 +181,7 @@
 
         background-color: black;
     }
-    .awbMid{
+    .osbMid{
         position: absolute;
         top: 0;
         left: 30%;
@@ -186,6 +196,7 @@
 
 
 
+
     /* ------------------------------------ csGallery ------------------------------------ */
 
 
@@ -193,12 +204,12 @@
 
 
     :root{
-        --app-awwidth: 100%;
-        --app-awheight: 100%;
+        --app-oswidth: 100%;
+        --app-osheight: 100%;
     }
     
 
-    .awGallery{
+    .osGallery{
         position: absolute;
         top: 0;
         left: 30%;
@@ -211,7 +222,7 @@
     }
     
     
-    .awgContent{
+    .osgContent{
         position: absolute;
         top: 0;
         left: 0;
@@ -225,7 +236,7 @@
         /* background-color: blue; */
     }
 
-    .awgSection{
+    .osgSection{
         position: relative;
         width: var(--app-awwidth);
         height: var(--app-awheight);
@@ -236,7 +247,7 @@
         /* background-color: aqua; */
     }
 
-    .awgImg{
+    .osgImg{
         position: absolute;
         top: 5%;
         left: 5%;
@@ -253,5 +264,5 @@
         /* background-color: blueviolet; */
     }
     
-    
 }
+

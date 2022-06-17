@@ -20,10 +20,17 @@ function setTransform(el, transform){
 
 
 function setupAnimation(){
-    containerHeight = overallContainer.getBoundingClientRect().height;
-    document.body.style.height = `${containerHeight}px`;
+    // containerHeight = overallContainer.getBoundingClientRect().height;
+    // document.body.style.height = `${containerHeight}px`;
     smoothScroll();
 }
+
+const   mainHeight = () => {
+    containerHeight = overallContainer.getBoundingClientRect().height;
+    document.body.style.height = `${containerHeight}px`;
+};
+window.addEventListener('resize', mainHeight);
+mainHeight();
 
 
 function smoothScroll(){

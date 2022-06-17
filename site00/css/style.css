@@ -13,7 +13,8 @@
 }
 
 :root{
-    --overall-height: 340vh;
+    --overall-height: 310vh;
+    /* --overall-height: 170vh; */
 }
 
 html, body{
@@ -45,14 +46,3 @@ main{
 }
 
 
-
-
-
-
-
-
-.oldSketches{
-    position: relative;
-    background-color: aqua;
-    height: 100vh;
-}

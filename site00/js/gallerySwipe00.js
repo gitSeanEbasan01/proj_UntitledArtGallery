@@ -5,7 +5,9 @@ const   mainGallery = document.querySelector('.csGallery'),
 
 
 let gsCurrent = 0,
-    slide = 0;
+    gsCurrentY = 0,
+    slide = 0,
+    slideY = 0;
         
 
 
