@@ -1,0 +1,82 @@
+
+
+.main-Footer{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+
+    background-color: aqua;
+}
+
+
+
+
+
+
+.mfContact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49%;
+    height: 100%;
+
+    background-color: rgb(175, 125, 221);
+}
+
+
+.mfcContainer{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+
+    background-color: rgb(74, 115, 218);
+}
+
+
+
+
+
+
+
+
+.mfDescription{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51%;
+    height: 100%;
+
+    background-color: rgb(110, 110, 222);
+}
+
+
+.mfdContainer{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+
+    background-color: rgb(136, 101, 226);
+}
+
+
+
+
+
+
+/* .mfcHome-Address{
+
+    
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+
+    background-color: rgb(95, 95, 224);
+}
+.mfcHome-Address > .fi{
+} */
