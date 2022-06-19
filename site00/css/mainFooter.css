@@ -7,7 +7,7 @@
     width: 100%;
     height: 40vh;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 
@@ -22,7 +22,18 @@
     width: 49%;
     height: 100%;
 
-    background-color: rgb(175, 125, 221);
+    /* background-color: rgb(175, 125, 221); */
+}
+
+
+.mfcBorder{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: black;
 }
 
 
@@ -33,8 +44,96 @@
     width: 80%;
     height: 60%;
 
-    background-color: rgb(74, 115, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* gap: 10%; */
+    /* align-items: center; */
+
+    /* background-color: rgb(74, 115, 218); */
 }
+.mfcHome-Address{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    
+    /* background-color: red; */
+}
+.mfcHome-Address > span{
+    font-size: 19px;
+    font-weight: 200;
+}
+.mfcHome-Address > span > div:nth-child(2){
+    font-weight: 400;
+}
+.fi-rs-map-marker-home{
+    position: relative;
+    top: 6px;
+    font-size: 40px;
+}
+
+
+.mfcContact-Num{
+    position: absolute;
+    top: 33.33%;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+
+    display: flex;
+    align-items: center;
+    gap: 3%;
+
+    /* background-color: brown; */
+}
+.mfcContact-Num > span{
+    font-size: 18px;
+    font-weight: 400;
+}
+.fi-rs-phone-call{
+    position: relative;
+    top: 5px;
+    padding: 4px;
+    font-size: 30px;
+}
+
+
+.mfcEmail-Address{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+
+    display: flex;
+    align-items: center;
+    gap: 3%;
+
+    /* background-color: blueviolet; */
+}
+.mfcEmail-Address > a{
+    font-size: 18px;
+    font-weight: 400;
+}
+.fi-rs-envelope{
+    position: relative;
+    top: 5px;
+    padding: 4px;
+    font-size: 30px;
+}
+
+
+
+
+
+
 
 
 
@@ -50,8 +149,41 @@
     width: 51%;
     height: 100%;
 
-    background-color: rgb(110, 110, 222);
+    /* background-color: rgb(110, 110, 222); */
 }
+
+
+
+.mfdBorder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.mfdBorder > .mfdbTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: black;
+}
+.mfdBorder > .mfdbLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+
+    background-color: black;
+}
+
+
+
+
 
 
 .mfdContainer{
@@ -61,22 +193,81 @@
     width: 80%;
     height: 80%;
 
-    background-color: rgb(136, 101, 226);
+    /* background-color: rgb(136, 101, 226); */
 }
 
 
 
+.mfdTitle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+
+    /* background-color: aquamarine; */
+}
+.mfdTitle > h2{
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+
+}
+.mfdTitle > h2 > span:nth-child(1){
+    font-weight: 400;
+}
+.mfdTitle > h2 > span:nth-child(2){
+    font-weight: 200;
+}
 
 
+.mfdSubTitle{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
 
-/* .mfcHome-Address{
+    /* background-color: blue; */
+}
+.mfdSubTitle > p{
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+}
 
+
+.mfdSocials{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+
+    /* background-color: brown; */
+}
+.mfdSocials > .so{
+    position: absolute;
+    transform: translate(0, 25%);
+    bottom: 0;
     
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-
-    background-color: rgb(95, 95, 224);
+    font-size: 60px;
+    color: inherit;
 }
-.mfcHome-Address > .fi{
-} */
+.mfdSocials > .facebook{
+    left: 0;
+}
+.mfdSocials > .instagram{
+    left: 80px;
+}
+.mfdSocials > .github{
+    left: 160px;
+}
+.mfdSocials > .linkedin{
+    left: 240px;
+}
+
+
+
