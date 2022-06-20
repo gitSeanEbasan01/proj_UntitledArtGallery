@@ -22,6 +22,8 @@
     width: 49%;
     height: 100%;
 
+    background-color: rgb(10, 10, 10);
+
     /* background-color: rgb(175, 125, 221); */
 }
 
@@ -48,10 +50,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    /* gap: 10%; */
-    /* align-items: center; */
 
-    /* background-color: rgb(74, 115, 218); */
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
 }
 .mfcHome-Address{
     position: absolute;
@@ -149,7 +151,7 @@
     width: 51%;
     height: 100%;
 
-    /* background-color: rgb(110, 110, 222); */
+    background-color: rgb(10, 10, 10);
 }
 
 
@@ -161,6 +163,8 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+
+    /* background-color: white; */
 }
 .mfdBorder > .mfdbTop{
     position: absolute;
@@ -178,7 +182,9 @@
     width: 1px;
     height: 100%;
 
-    background-color: black;
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    background-color: white;
 }
 
 
@@ -193,7 +199,9 @@
     width: 80%;
     height: 80%;
 
-    /* background-color: rgb(136, 101, 226); */
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
 }
 
 

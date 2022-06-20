@@ -360,11 +360,12 @@
         position: relative;
         top: -20px;
         opacity: 0;
-        /* transition: 1s ease-in-out 2s; */
         
         padding-left: 5%;
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 400;
+
+        color: rgb(77, 77, 77);
     }
     .description.active > p{
         top: 0;
@@ -424,11 +425,15 @@
         position: relative;
         top: 20px;
         opacity: 0;
-        /* transition: 1s ease-in-out 2.5s; */
         
         padding-right: 5%;
         font-size: 20px;
         font-weight: 400;
+
+        color: rgb(77, 77, 77);
+    }
+    .name > p > span{
+        font-weight: 200;
     }
     .name.active > p{
         top: 0;
