@@ -50,18 +50,18 @@ function startMouseUp(e){
 function osSwipe(){
 
     if(osEndX - osInitialX < -50){
-        if(osgsCurrent !== -(osContentWidth * 6)){
+        if(osgsCurrent !== -(osContentWidth * 3)){
 
             if(osgsCurrent >= -(osContentWidth * 0)){
                 osgsCurrent -= osContentWidth;
                 osSlide++;
                 osgContent.style.left = `${10}%`;
             }
-            else if(osgsCurrent < -(osContentWidth * 0) && osgsCurrent > -(osContentWidth * 5)){
+            else if(osgsCurrent < -(osContentWidth * 0) && osgsCurrent > -(osContentWidth * 2)){
                 osgsCurrent -= osContentWidth;
                 osSlide++;
             }
-            else if(osgsCurrent < -(osContentWidth * 4) && osgsCurrent == -(osContentWidth * 5)){
+            else if(osgsCurrent < -(osContentWidth * 1) && osgsCurrent == -(osContentWidth * 2)){
                 osgsCurrent -= osContentWidth;
                 osSlide++;
                 osgContent.style.left = `${20}%`;
@@ -72,12 +72,12 @@ function osSwipe(){
     else if(osEndX - osInitialX > 50){
         if(osgsCurrent !== 0){
 
-            if(osgsCurrent < -(osContentWidth * 5)){
+            if(osgsCurrent < -(osContentWidth * 2)){
                 osgsCurrent += osContentWidth;
                 osSlide--;
                 osgContent.style.left = `${10}%`;
             }
-            else if(osgsCurrent > -(osContentWidth * 6) && osgsCurrent < -(osContentWidth * 1)){
+            else if(osgsCurrent > -(osContentWidth * 3) && osgsCurrent < -(osContentWidth * 1)){
                 osgsCurrent += osContentWidth;
                 osSlide--;
             }

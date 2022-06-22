@@ -19,8 +19,13 @@
         left: 0;
         width: 30%;
         height: 100%;
+        opacity: 0;
 
         /* background-color: blue; */
+    }
+    .oldSketches.active .osInformation{
+        opacity: 1;
+        transition: opacity 2s ease-in-out .5s;
     }
 
 
@@ -181,31 +186,45 @@
         position: absolute;
         top: 0;
         left: 30%;
-        width: 70%;
+        width: 0;
         height: 1px;
         opacity: .5;
 
         background-color: black;
     }
+    .oldSketches.active .osbRight{
+        width: 70%;
+        transition: width 2s;
+    }
+    
     .osbLeft{
         position: absolute;
         top: 0;
         right: 70%;
-        width: 30%;
+        width: 0;
         height: 1px;
         opacity: .5;
 
         background-color: black;
     }
+    .oldSketches.active .osbLeft{
+        width: 30%;
+        transition: width 2s;
+    }
+    
     .osbMid{
         position: absolute;
         top: 0;
         left: 30%;
         width: 1px;
-        height: 100%;
+        height: 0;
         opacity: .5;
 
         background-color: black;
+    }
+    .oldSketches.active .osbMid{
+        height: 100%;
+        transition: height 2s;
     }
     
 
@@ -259,25 +278,61 @@
         overflow: hidden;
 
         flex: none;
+        transition: 1s;
 
         /* background-color: aqua; */
     }
 
-    .osgImg{
+    .osgImg0,
+    .osgImg1,
+    .osgImg2,
+    .osgImg3{
         position: absolute;
         top: 5%;
         left: 5%;
         width: 90%;
-        height: 90%;
+        height: 0;
 
         background-size: cover;
         background-position: center;
         transform: scale(1);
         transition: .5s;
         cursor: pointer;
-        pointer-events: none;
+        pointer-events: none; 
         
-        /* background-color: blueviolet; */
+        background-color: gray;
+    }
+
+    .osgImg0{
+        background-image: url(./img02/3.png);
+    }
+    .oldSketches.active .osgImg0{
+        height: 90%;
+        transition: height 1s ease-in-out 1s;
+    }
+
+    .osgImg1{
+        background-image: url(./img02/sketches/7.jpg);
+    }
+    .oldSketches.active .osgImg1{
+        height: 90%;
+        transition: height 1s ease-in-out 1.5s;
+    }
+
+    .osgImg2{
+        background-image: url(./img02/sketches/8.jpg);
+    }
+    .oldSketches.active .osgImg2{
+        height: 90%;
+        transition: height 1s ease-in-out 2s;
+    }
+
+    .osgImg3{
+        background-image: url(./img02/sketches/12.jpg);
+    }
+    .oldSketches.active .osgImg3{
+        height: 90%;
+        transition: height 1s ease-in-out 2.5s;
     }
     
 }

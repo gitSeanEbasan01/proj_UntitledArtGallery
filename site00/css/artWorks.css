@@ -15,8 +15,13 @@
         left: 0;
         width: 30%;
         height: 100%;
+        opacity: 0;
 
         /* background-color: green; */
+    }
+    .artWorks.active .awInformation{
+        opacity: 1;
+        transition: opacity 2s ease-in-out .5s;
     }
 
 
@@ -173,31 +178,45 @@
         position: absolute;
         top: 0;
         left: 30%;
-        width: 70%;
+        width: 0;
         height: 1px;
         opacity: .5;
 
         background-color: black;
     }
+    .artWorks.active .awbRight{
+        width: 70%;
+        transition: width 2s;
+    }
+    
     .awbLeft{
         position: absolute;
         top: 0;
         right: 70%;
-        width: 30%;
+        width: 0;
         height: 1px;
         opacity: .5;
 
         background-color: black;
     }
+    .artWorks.active .awbLeft{
+        width: 30%;
+        transition: width 2s;
+    }
+    
     .awbMid{
         position: absolute;
         top: 0;
         left: 30%;
         width: 1px;
-        height: 100%;
+        height: 0;
         opacity: .5;
 
         background-color: black;
+    }
+    .artWorks.active .awbMid{
+        height: 100%;
+        transition: height 2s;
     }
     
 
@@ -250,25 +269,89 @@
         overflow: hidden;
 
         flex: none;
+        transition: 1s;
 
         /* background-color: aqua; */
     }
 
-    .awgImg{
+    .awgImg0,
+    .awgImg1,
+    .awgImg2,
+    .awgImg3,
+    .awgImg4,
+    .awgImg5,
+    .awgImg6{
         position: absolute;
         top: 5%;
         left: 5%;
         width: 90%;
-        height: 90%;
+        height: 0;
 
         background-size: cover;
         background-position: center;
         transform: scale(1);
         transition: .5s;
         cursor: pointer;
-        pointer-events: none;
+        pointer-events: none; 
         
-        /* background-color: blueviolet; */
+        background-color: gray;
+    }
+
+
+    .awgImg0{
+        background-image: url(./img01/2.png);
+    }
+    .artWorks.active .awgImg0{
+        height: 90%;
+        transition: height 1s ease-in-out 1s;
+    }
+    
+    .awgImg1{
+        background-image: url(./img01/3.png);
+    }
+    .artWorks.active .awgImg1{
+        height: 90%;
+        transition: height 1s ease-in-out 1.5s;
+    }
+    
+    .awgImg2{
+        background-image: url(./img01/5.png);
+    }
+    .artWorks.active .awgImg2{
+        height: 90%;
+        transition: height 1s ease-in-out 2s;
+    }
+    
+    .awgImg3{
+        background-image: url(./img01/6.png);
+    }
+    .artWorks.active .awgImg3{
+        height: 90%;
+        transition: height 1s ease-in-out 2.5s;
+    }
+    
+    .awgImg4{
+        background-image: url(./img01/9.png);
+    }
+    .artWorks.active .awgImg4{
+        height: 90%;
+        transition: height 1s ease-in-out 3s;
+    }
+
+    .awgImg5{
+        background-image: url(./img01/13-0.jpg);
+    }
+    .artWorks.active .awgImg5{
+        height: 90%;
+        transition: height 1s ease-in-out 3.5s;
+    }
+
+    .awgImg6{
+        background-image: url(./img01/14-0.png);
+    }
+    .artWorks.active .awgImg6{
+        height: 90%;
+        transition: height 1s ease-in-out 4s;
     }
     
     

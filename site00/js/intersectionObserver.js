@@ -1,4 +1,7 @@
-let ioCurrentStudies = document.querySelector('.currentStudies');
+let ioCurrentStudies = document.querySelector('.currentStudies'),
+    ioArtWorks = document.querySelector('.artWorks'),
+    ioOldSketches = document.querySelector('.oldSketches'),
+    ioMainFooter = document.querySelector('.main-Footer');
 
 let option = {
     rootMargin: '0px',
@@ -18,3 +21,6 @@ let setItemActive = (entries => {
 let observer = new IntersectionObserver(setItemActive, option);
 
 ioCurrentStudies = observer.observe(ioCurrentStudies);
+ioArtWorks = observer.observe(ioArtWorks);
+ioOldSketches = observer.observe(ioOldSketches);
+ioMainFooter = observer.observe(ioMainFooter);

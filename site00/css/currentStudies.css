@@ -22,7 +22,7 @@
 }
 .currentStudies.active .csInformation{
     opacity: 1;
-    transition: 2s;
+    transition: opacity 2s ease-in-out .5s;
 }
 
 
@@ -190,7 +190,7 @@
 }
 .currentStudies.active .csbRight{
     width: 70%;
-    transition: 2s;
+    transition: width 2s;
 }
 .csbLeft{
     position: absolute;
@@ -204,7 +204,7 @@
 }
 .currentStudies.active .csbLeft{
     width: 30%;
-    transition: 2s;
+    transition: width 2s;
 }
 .csbMid{
     position: absolute;
@@ -218,7 +218,7 @@
 }
 .currentStudies.active .csbMid{
     height: 100%;
-    transition: 2s;
+    transition: height 2s;
 }
 
 
@@ -265,23 +265,25 @@
 .csgSection{
     position: relative;
     width: var(--app-cswidth);
-    height: 0;
+    height: var(--app-csheight);
     overflow: hidden;
 
     flex: none;
-
-}
-.currentStudies.active .csgSection{
-    height: 100%;
-    transition: 2s;
+    transition: 1s;
 }
 
-.csgImg{
+
+
+.csgImg0,
+.csgImg1,
+.csgImg2,
+.csgImg3,
+.csgImg4{
     position: absolute;
     top: 5%;
     left: 5%;
     width: 90%;
-    height: 90%;
+    height: 0;
 
     background-size: cover;
     background-position: center;
@@ -290,24 +292,45 @@
     cursor: pointer;
     pointer-events: none; 
     
-    background-color: blueviolet;
+    background-color: gray;
 }
+
+.csgImg0{
+    background-image: url(./img00/1.JPG);
+}
+.currentStudies.active .csgImg0{
+    height: 90%;
+    transition: 1s ease-in-out 1s;
+}
+
+.csgImg1{
+    background-image: url(./img00/2.JPG);
+}
+.currentStudies.active .csgImg1{
+    height: 90%;
+    transition: 1s ease-in-out 1.5s;
+}
+
 .csgImg2{
-    background-image: url(./img/notebook.jpeg);
-    
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
+    background-image: url(./img00/3.JPG);
+}
+.currentStudies.active .csgImg2{
     height: 90%;
-
-    background-size: cover;
-    background-position: center;
-    transform: scale(1);
-    transition: .5s;
-    cursor: pointer;
-    pointer-events: none; 
-    
-    background-color: blueviolet;
+    transition: 1s ease-in-out 2s;
 }
 
+.csgImg3{
+    background-image: url(./img00/4.JPG);
+}
+.currentStudies.active .csgImg3{
+    height: 90%;
+    transition: 1s ease-in-out 2.5s;
+}
+
+.csgImg4{
+    background-image: url(./img00/5.JPG);
+}
+.currentStudies.active .csgImg4{
+    height: 90%;
+    transition: 1s ease-in-out 3s;
+}

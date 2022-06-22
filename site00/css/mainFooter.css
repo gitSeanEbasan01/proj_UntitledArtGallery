@@ -22,10 +22,15 @@
     width: 49%;
     height: 100%;
 
-    background-color: rgb(10, 10, 10);
+    background-color: white;
 
     /* background-color: rgb(175, 125, 221); */
 }
+.main-Footer.active .mfContact{
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1s ease-in-out .5s;
+}
+
 
 
 .mfcBorder{
@@ -151,7 +156,11 @@
     width: 51%;
     height: 100%;
 
+    background-color: white;
+}
+.main-Footer.active .mfDescription{
     background-color: rgb(10, 10, 10);
+    transition: background-color 1s ease-in-out .5s;
 }
 
 
@@ -175,16 +184,21 @@
 
     background-color: black;
 }
+
 .mfdBorder > .mfdbLeft{
     position: absolute;
     top: 0;
     left: 0;
     width: 1px;
-    height: 100%;
+    height: 0;
 
     /* ------------------------------------------------ */
     mix-blend-mode: difference;
     background-color: white;
+}
+.main-Footer.active .mfdBorder .mfdbLeft{
+    height: 100%;
+    transition: height 1s;
 }
 
 
