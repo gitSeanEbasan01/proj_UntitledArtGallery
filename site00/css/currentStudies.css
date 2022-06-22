@@ -1,275 +1,313 @@
 
-@media (min-width: 200px) {
-
-    .currentStudies{
-        position: relative;
-        width: 100%;
-        height: 70vh;
-    }
-    
 
 
-
-    .csInformation{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        height: 100%;
-
-        /* background-color: green; */
-    }
-    
-
-
-
-    .csTitle{
-        position: absolute;
-        top: 5%;
-        left: 0;
-        width: 100%;
-        height: 10%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        /* background-color: aqua; */
-    }
-    .csTitle > h3{
-        font-size: 30px;
-        font-weight: 200;
-    }
-    .csTitle > p{
-        font-size: 15px;
-        font-weight: 100;
-        padding-right: 5px;
-    }
-    
-    
-
-
-
-    .csDescription{
-        position: absolute;
-        bottom: 15%;
-        left: 10%;
-        width: 180px;
-        height: 45px;
-
-        /* background-color: aquamarine; */
-    }
-    .csDescription > p{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        
-        font-size: 15px;
-        font-weight: 300;
-
-        color: rgb(77, 77, 77);
-
-        /* background-color: blueviolet; */
-    }
-    .csDescription > p:nth-child(1){
-        position: absolute;
-        top: -20px;
-        left: 0;
-        width: 100%;
-
-        font-size: 12px;
-        font-weight: 100;
-
-        /* color: rgb(30, 30, 30); */
-    }
-
-
-
-
-
-
-    .csPageButton{
-        position: absolute;
-        bottom: 5%;
-        left: 0;
-        width: 100%;
-        height: 10%;
-
-        /* background-color: yellowgreen; */
-    }
-    .csPageButton > .button{
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        width: 180px;
-        height: 50%;
-        border: black solid 1px;
-        border-radius: 20px;
-        color: inherit;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-    .csPageButton > .button > .cover{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        z-index: -1;
-        border-radius: 20px;
-
-        background-color: rgb(51, 51, 51);
-        transition: width .2s;
-    }
-    .csPageButton > .button:hover > .cover{
-        width: 100%;
-    }
-    
-    
-    .csPageButton > .button > .title{
-        font-size: 15px;
-        font-weight: 100;
-        word-spacing: 5px;
-        color: black;
-        transition: color .2s;
-    }
-    .csPageButton > .button:hover > .title{
-        color: white;
-    }
-
-
-    .csPageButton > .button > .uit{
-        font-size: 20px;
-        font-weight: 100;
-        transition: color .2s;
-    }
-    .csPageButton > .button:hover > .uit{
-        color: white;
-    }
-
-
-
-
-    /* ------------------------------------ csBorder ------------------------------------ */
-
-
-
-
-    .csBorder{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        pointer-events: none;
-
-        pointer-events: none;
-    }
-    
-    .csbRight{
-        position: absolute;
-        top: 0;
-        left: 30%;
-        width: 70%;
-        height: 1px;
-        opacity: .5;
-
-        background-color: black;
-    }
-    .csbLeft{
-        position: absolute;
-        top: 0;
-        right: 70%;
-        width: 30%;
-        height: 1px;
-        opacity: .5;
-
-        background-color: black;
-    }
-    .csbMid{
-        position: absolute;
-        top: 0;
-        left: 30%;
-        width: 1px;
-        height: 100%;
-        opacity: .5;
-
-        background-color: black;
-    }
-
-
-
-
-    /* ------------------------------------ csGallery ------------------------------------ */
-
-
-
-
-
-    :root{
-        --app-cswidth: 100%;
-        --app-csheight: 100%;
-    }
-    
-
-    .csGallery{
-        position: absolute;
-        top: 0;
-        left: 30%;
-        width: 70%;
-        height: 100%;
-        overflow: hidden;
-        cursor: grab;
-
-        /* background-color: red; */
-    }
-
-    .csgContent{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 100%;
-        transition: .5s;
-        will-change: transform;
-
-        display: flex;
-
-        /* background-color: blue; */
-    }
-
-    .csgSection{
-        position: relative;
-        width: var(--app-cswidth);
-        height: var(--app-csheight);
-        overflow: hidden;
-
-        flex: none;
-
-        /* background-color: aqua; */
-    }
-
-    .csgImg{
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        width: 90%;
-        height: 90%;
-
-        background-size: cover;
-        background-position: center;
-        transform: scale(1);
-        transition: .5s;
-        cursor: pointer;
-        pointer-events: none;
-        
-        /* background-color: blueviolet; */
-    }
-    
+.currentStudies{
+    position: relative;
+    width: 100%;
+    height: 70vh;
 }
+
+
+
+
+.csInformation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+
+    /* background-color: green; */
+}
+.currentStudies.active .csInformation{
+    opacity: 1;
+    transition: 2s;
+}
+
+
+
+
+
+.csTitle{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aqua; */
+}
+.csTitle > h3{
+    font-size: 30px;
+    font-weight: 200;
+}
+.csTitle > p{
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 5px;
+}
+
+
+
+
+
+.csDescription{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 180px;
+    height: 45px;
+
+    /* background-color: aquamarine; */
+}
+.csDescription > p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    font-size: 15px;
+    font-weight: 300;
+
+    color: rgb(77, 77, 77);
+
+    /* background-color: blueviolet; */
+}
+.csDescription > p:nth-child(1){
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+
+    font-size: 12px;
+    font-weight: 100;
+
+    /* color: rgb(30, 30, 30); */
+}
+
+
+
+
+
+
+.csPageButton{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+
+    /* background-color: yellowgreen; */
+}
+.csPageButton > .button{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 180px;
+    height: 50%;
+    border: black solid 1px;
+    border-radius: 20px;
+    color: inherit;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.csPageButton > .button > .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+
+    background-color: rgb(51, 51, 51);
+    transition: width .2s;
+}
+.csPageButton > .button:hover > .cover{
+    width: 100%;
+}
+
+
+.csPageButton > .button > .title{
+    font-size: 15px;
+    font-weight: 100;
+    word-spacing: 5px;
+    color: black;
+    transition: color .2s;
+}
+.csPageButton > .button:hover > .title{
+    color: white;
+}
+
+
+.csPageButton > .button > .uit{
+    font-size: 20px;
+    font-weight: 100;
+    transition: color .2s;
+}
+.csPageButton > .button:hover > .uit{
+    color: white;
+}
+
+
+
+
+/* ------------------------------------ csBorder ------------------------------------ */
+
+
+
+
+.csBorder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+
+    pointer-events: none;
+}
+
+.csbRight{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 0;
+    height: 1px;
+    opacity: .5;
+
+    background-color: black;
+}
+.currentStudies.active .csbRight{
+    width: 70%;
+    transition: 2s;
+}
+.csbLeft{
+    position: absolute;
+    top: 0;
+    right: 70%;
+    width: 0;
+    height: 1px;
+    opacity: .5;
+
+    background-color: black;
+}
+.currentStudies.active .csbLeft{
+    width: 30%;
+    transition: 2s;
+}
+.csbMid{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 1px;
+    height: 0;
+    opacity: .5;
+
+    background-color: black;
+}
+.currentStudies.active .csbMid{
+    height: 100%;
+    transition: 2s;
+}
+
+
+
+
+/* ------------------------------------ csGallery ------------------------------------ */
+
+
+
+
+
+:root{
+    --app-cswidth: 100%;
+    --app-csheight: 100%;
+}
+
+
+.csGallery{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+
+    /* background-color: red; */
+}
+
+.csgContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    transition: .5s;
+    will-change: transform;
+
+    display: flex;
+
+    /* background-color: blue; */
+}
+
+.csgSection{
+    position: relative;
+    width: var(--app-cswidth);
+    height: 0;
+    overflow: hidden;
+
+    flex: none;
+
+}
+.currentStudies.active .csgSection{
+    height: 100%;
+    transition: 2s;
+}
+
+.csgImg{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    transition: .5s;
+    cursor: pointer;
+    pointer-events: none; 
+    
+    background-color: blueviolet;
+}
+.csgImg2{
+    background-image: url(./img/notebook.jpeg);
+    
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    transition: .5s;
+    cursor: pointer;
+    pointer-events: none; 
+    
+    background-color: blueviolet;
+}
+
