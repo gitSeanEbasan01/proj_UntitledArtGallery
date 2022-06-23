@@ -1,4 +1,5 @@
-let beCurrentStudies = document.querySelector('.currentStudies'),
+let betsTitle = document.querySelector('.titleSection'),
+    beCurrentStudies = document.querySelector('.currentStudies'),
 
     beOverallContainer = document.querySelector('.overallContainer');
 
@@ -12,14 +13,12 @@ let setItemActive00 = (entries => {
 
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            // beOverallContainer.classList.add('active');
-            if(entry.className === 'currentStudies'){
+            if(entry.target.classList.contains('currentStudies')){
                 beOverallContainer.classList.add('active');
+                betsTitle.classList.add('active');
             }
             
-        }
-        else{
-            beOverallContainer.classList.remove('active');
+            
         }
     })
 });
