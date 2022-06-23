@@ -13,8 +13,8 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
   - [x] Title anim + parallax + mix-blend
   - [x] Title description
 - [x] Shorthand section
-- [ ] Footer...
-- [ ] Observer anim
+- [x] Footer
+- [x] Observer anim
 - [ ] Navbar + hamburger
 - [ ] Media Query | Make website look good on different screen resolutions and on other devices as well(phones, tablets, etc.)
 <br />
