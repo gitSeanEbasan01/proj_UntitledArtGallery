@@ -5,6 +5,13 @@
         position: relative;
         width: 100%;
         height: 110vh;
+        z-index: -3;
+
+        background-color: rgb(10, 10, 10);
+        transition: background-color 1.5s;
+    }
+    .titleSection.active{
+        background-color: white;
     }
 
     .tsTitle{
@@ -13,31 +20,37 @@
         left: 5%;
         width: 90%;
         height: 50%;
-        z-index: -1;
+        z-index: -2;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        
         background-color: rgb(10, 10, 10);
         transition: background-color 1.5s;
         will-change: transform;
+
+        
     }
     .titleSection.active .tsTitle{
         background-color: white;
     }
 
 
-    /* .tsBorders{
+
+    .tsBorders{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
 
-
-    } */
+        /* ------------------------------------------------ */
+        mix-blend-mode: difference;
+        color: white;
+    }
+    
     .tBorderTopLeft{
         position: absolute;
         top: 0;
@@ -67,16 +80,16 @@
         background-color: #fff;
         transition: 2s;
     }
-    .tsTitle.borderActive > .tBorderTopLeft, 
-    .tsTitle.borderActive > .tBorderTopRight,
-    .tsTitle.borderActive > .tBorderBottomLeft, 
-    .tsTitle.borderActive > .tBorderBottomRight{
+    .tsTitle.borderActive .tBorderTopLeft, 
+    .tsTitle.borderActive .tBorderTopRight,
+    .tsTitle.borderActive .tBorderBottomLeft, 
+    .tsTitle.borderActive .tBorderBottomRight{
         width: 50%;
     }
-    .tsTitle.borderFade > .tBorderTopLeft, 
-    .tsTitle.borderFade > .tBorderTopRight,
-    .tsTitle.borderFade > .tBorderBottomLeft, 
-    .tsTitle.borderFade > .tBorderBottomRight{
+    .tsTitle.borderFade .tBorderTopLeft, 
+    .tsTitle.borderFade .tBorderTopRight,
+    .tsTitle.borderFade .tBorderBottomLeft, 
+    .tsTitle.borderFade .tBorderBottomRight{
         opacity: 0;
     }
 
@@ -98,12 +111,12 @@
         top: 0;
         right: 0;
     }
-    .tsTitle.borderActive > .tBorderLeft,
-    .tsTitle.borderActive > .tBorderRight{
+    .tsTitle.borderActive .tBorderLeft,
+    .tsTitle.borderActive .tBorderRight{
         opacity: 1;
     }
-    .tsTitle.borderFade > .tBorderLeft,
-    .tsTitle.borderFade > .tBorderRight{
+    .tsTitle.borderFade .tBorderLeft,
+    .tsTitle.borderFade .tBorderRight{
         opacity: 0;
     }
 
@@ -347,6 +360,10 @@
         left: 0;
         width: 100%;
         height: 30%;
+
+        /* ------------------------------------------------ */
+        mix-blend-mode: difference;
+        color: white;
     }
 
     .titleDescription_Container{
@@ -378,7 +395,9 @@
         font-size: 20px;
         font-weight: 400;
 
-        color: rgb(77, 77, 77);
+        /* color: rgb(77, 77, 77); */
+        /* color: white; */
+        color: rgb(200, 200, 200);
     }
     .description.active > p{
         top: 0;
@@ -403,8 +422,8 @@
         width: 0;
         height: 100%;
         opacity: 1;
-        background-color: black;
-        /* transition: 2s; */
+        /* background-color: black; */
+        background-color: white;
     }
     .borderRightSide{
         position: absolute;
@@ -413,8 +432,8 @@
         width: 0;
         height: 100%;
         opacity: 1;
-        background-color: black;
-        /* transition: 2s; */
+        /* background-color: black; */
+        background-color: white;
     }
     .descriptionBorder.active > .borderLeftSide,
     .descriptionBorder.active > .borderRightSide{
@@ -443,7 +462,8 @@
         font-size: 20px;
         font-weight: 400;
 
-        color: rgb(77, 77, 77);
+        /* color: rgb(77, 77, 77); */
+        color: rgb(200, 200, 200);
     }
     .name > p > span{
         font-weight: 200;

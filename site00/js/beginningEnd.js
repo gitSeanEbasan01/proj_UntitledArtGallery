@@ -17,8 +17,6 @@ let setItemActive00 = (entries => {
                 beOverallContainer.classList.add('active');
                 betsTitle.classList.add('active');
             }
-            
-            
         }
     })
 });
