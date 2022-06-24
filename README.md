@@ -15,7 +15,9 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 - [x] Shorthand section
 - [x] Footer
 - [x] Observer anim
-- [ ] Navbar + hamburger
+- [ ] Reminders:
+  - [ ] overallContainer background color transition modification
+- [ ] Navbar + hamburger...
 - [ ] Media Query | Make website look good on different screen resolutions and on other devices as well(phones, tablets, etc.)
 <br />
 
