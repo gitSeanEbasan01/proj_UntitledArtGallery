@@ -24,15 +24,113 @@
 }
 
 
+
+
+/* --------------------------- */
 .navTitle{
     position: absolute;
     top: 10%;
-    left: 10px;
-    width: 200px;
+    left: 100px;
+    width: 152px;
     height: 80%;
+    font-size: 30px;
+    font-weight: 200;
+
+    display: flex;
+    align-items: center;
+
+    /* mix-blend-mode: difference;
+    color: white; */
 
     background-color: blue;
 }
+
+
+.navTitle .cover{
+    position: absolute;
+    top: 0;
+    left: -92px;
+    width: 92px;
+    height: 100%;
+    z-index: 7;
+
+    background-color: aqua;
+}
+.navTitle > .U-{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 7;
+
+    background-color: yellow;
+}
+.navTitle > .-ntitled{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 92px;
+    height: 100%;
+    transition: left .5s;
+    z-index: 6;
+
+    background-color: yellowgreen;
+}
+.navTitle:hover > .-ntitled{
+    left: -92px;
+}
+
+
+
+.navTitle > .cover-art{
+    position: absolute;
+    top: 0;
+    left: 91px;
+    width: 21px;
+    height: 100%;
+    z-index: 5;
+
+    background-color: rgb(70, 115, 115);
+}
+.navTitle > .A-{
+    position: absolute;
+    top: 0;
+    left: 112px;
+    width: 19px;
+    height: 100%;
+    z-index: 5;
+
+    background-color: springgreen;
+}
+.navTitle > .-rt{
+    position: absolute;
+    top: 0;
+    left: 131px;
+    width: 21px;
+    height: 100%;
+    transition: left .5s;
+    z-index: 4;
+
+    background-color: tan;
+}
+.navTitle:hover > .-rt{
+    left: 91px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navCategoryContainer{
     position: absolute;
