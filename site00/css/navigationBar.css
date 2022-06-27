@@ -8,6 +8,7 @@
     width: 100%;
     height: 100%;
     z-index: 5;
+    pointer-events: none;
     
     /* background-color: violet; */
 }
@@ -19,6 +20,7 @@
     width: 100%;
     height: 50px;
     z-index: 5;
+    pointer-events: all;
 
     background-color: red;
 }
@@ -31,7 +33,7 @@
     position: absolute;
     top: 10%;
     left: 100px;
-    width: 152px;
+    width: 254px;
     height: 80%;
     font-size: 30px;
     font-weight: 200;
@@ -39,10 +41,7 @@
     display: flex;
     align-items: center;
 
-    /* mix-blend-mode: difference;
-    color: white; */
-
-    background-color: blue;
+    background-color: red;
 }
 
 
@@ -52,9 +51,9 @@
     left: -92px;
     width: 92px;
     height: 100%;
-    z-index: 7;
+    z-index: 9;
 
-    background-color: aqua;
+    background-color: red;
 }
 .navTitle > .U-{
     position: absolute;
@@ -62,9 +61,11 @@
     left: 0;
     width: 20px;
     height: 100%;
-    z-index: 7;
+    z-index: 9;
 
-    background-color: yellow;
+    font-weight: 400;
+
+    background-color: red;
 }
 .navTitle > .-ntitled{
     position: absolute;
@@ -72,13 +73,17 @@
     left: 20px;
     width: 92px;
     height: 100%;
-    transition: left .5s;
-    z-index: 6;
+    z-index: 8;
 
-    background-color: yellowgreen;
+    background-color: red;
 }
 .navTitle:hover > .-ntitled{
     left: -92px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .-ntitled{
+    left: 20px;
+    transition: left .5s;
 }
 
 
@@ -89,19 +94,30 @@
     left: 91px;
     width: 21px;
     height: 100%;
-    z-index: 5;
+    z-index: 7;
 
-    background-color: rgb(70, 115, 115);
+    background-color: red;
 }
+.navTitle:hover > .cover-art{
+    left: -1px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .cover-art{
+    left: 91px;
+    transition: left .5s;
+}
+
 .navTitle > .A-{
     position: absolute;
     top: 0;
     left: 112px;
     width: 19px;
     height: 100%;
-    z-index: 5;
+    z-index: 7;
 
-    background-color: springgreen;
+    font-weight: 400;
+
+    background-color: red;
 }
 .navTitle:hover > .A-{
     left: 20px;
@@ -118,10 +134,9 @@
     left: 131px;
     width: 21px;
     height: 100%;
-    /* transition: left .5s; */
-    z-index: 4;
+    z-index: 6;
 
-    background-color: tan;
+    background-color: red;
 }
 .navTitle:hover > .-rt{
     left: -1px;
@@ -129,6 +144,69 @@
 }
 .navTitle:not(:hover) > .-rt{
     left: 131px;
+    transition: left .5s;
+}
+
+
+
+
+
+.navTitle > .cover-gallery{
+    position: absolute;
+    top: 0;
+    left: 74px;
+    width: 78px;
+    height: 100%;
+    z-index: 5;
+
+    background-color: red;
+}
+.navTitle:hover > .cover-gallery{
+    left: -39px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .cover-gallery{
+    left: 74px;
+    transition: left .5s;
+}
+
+.navTitle > .G-{
+    position: absolute;
+    top: 0;
+    left: 152px;
+    width: 24px;
+    height: 100%;
+    z-index: 5;
+
+    font-weight: 400;
+
+    background-color: red;
+}
+.navTitle:hover > .G-{
+    left: 39px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .G-{
+    left: 152px;
+    transition: left .5s;
+}
+
+.navTitle > .-allery{
+    position: absolute;
+    top: 0;
+    left: 176px;
+    width: 78px;
+    height: 100%;
+    z-index: 4;
+    
+    background-color: red;
+}
+.navTitle:hover > .-allery{
+    left: -39px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .-allery{
+    left: 176px;
     transition: left .5s;
 }
 
