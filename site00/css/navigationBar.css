@@ -103,19 +103,33 @@
 
     background-color: springgreen;
 }
+.navTitle:hover > .A-{
+    left: 20px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .A-{
+    left: 112px;
+    transition: left .5s;
+}
+
 .navTitle > .-rt{
     position: absolute;
     top: 0;
     left: 131px;
     width: 21px;
     height: 100%;
-    transition: left .5s;
+    /* transition: left .5s; */
     z-index: 4;
 
     background-color: tan;
 }
 .navTitle:hover > .-rt{
-    left: 91px;
+    left: -1px;
+    transition: left .6s ease-in-out .1s;
+}
+.navTitle:not(:hover) > .-rt{
+    left: 131px;
+    transition: left .5s;
 }
 
 
