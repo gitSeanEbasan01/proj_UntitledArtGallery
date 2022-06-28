@@ -388,7 +388,9 @@
 
     background-color: blueviolet;
 }
-.naviList .exploredList{
+
+
+.naviList .exploredUnorderedList{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -396,18 +398,59 @@
     height: 90%;
     list-style: none;
 
-    background-color: rgb(91, 57, 57);
+    /* background-color: rgb(91, 57, 57); */
 }
-.naviList .exploredList li:nth-child(1){
+.naviList .exploredUnorderedList .exploredLi{
     position: relative;
-    top: 0;
+    top: 25px;
     left: 0;
-    /* width: 100%; */
-    /* height: 30px; */
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+    transition: .5s;
+    z-index: 5;
+    /* pointer-events: none; */
     
     background-color: red;
 }
-.naviList .exploredList li a p{
+.naviList .exploredUnorderedList .exploredLi.active{
+    top: 0;
+    opacity: 1;
+    z-index: 6;
+    /* pointer-events: all; */
+}
+
+.naviList .aboutUnorderedList{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    list-style: none;
+}
+.naviList .aboutUnorderedList .aboutLi{
+    position: relative;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+    transition: .5s;
+    z-index: 5;
+    /* pointer-events: none; */
+
+    background-color: red;
+}
+.naviList .aboutUnorderedList .aboutLi.active{
+    top: 0;
+    opacity: 1;
+    z-index: 6;
+    /* pointer-events: all; */
+}
+
+
+.naviList .exploredUnorderedList li a p,
+.naviList .aboutUnorderedList li a p{
     font-size: 20px;
     font-weight: 200;
     color: black;
