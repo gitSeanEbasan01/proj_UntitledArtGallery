@@ -13,7 +13,7 @@
     /* background-color: violet; */
 }
 
-.navBar{
+.navBar{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +22,11 @@
     z-index: 5;
     pointer-events: all;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
+}
+.navArea.active > .navBar{
+    background-color: white;
 }
 
 
@@ -41,14 +45,14 @@
     display: flex;
     align-items: center;
 
-    background-color: blue;
+    background-color: inherit;
 }
 .navTitle:hover{
     width: 254px;
 }
 
 
-.navTitle .cover{
+.navTitle .cover{ 
     position: absolute;
     top: 0;
     left: -92px;
@@ -56,9 +60,13 @@
     height: 100%;
     z-index: 9;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
 }
-.navTitle > .U-{
+.navArea.active .navTitle .cover{
+    background-color: white;
+}
+.navTitle > .U-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     left: 0;
@@ -67,10 +75,16 @@
     z-index: 9;
 
     font-weight: 400;
+    color: white;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s, color 1.5s;
 }
-.navTitle > .-ntitled{
+.navArea.active .navTitle .U-{
+    background-color: white;
+    color: black;
+}
+.navTitle > .-ntitled{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     /* left: 20px; */
@@ -78,18 +92,23 @@
     width: 92px;
     height: 100%;
     z-index: 8;
+    color: white;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .-ntitled{
+    color: black;
+    background-color: white;
 }
 .navTitle:hover > .-ntitled{
     /* left: -92px; */
     left: 20px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .-ntitled{
     /* left: 20px; */
     left: -92px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s, color 1.5s;
 }
 
 
@@ -103,20 +122,23 @@
     height: 100%;
     z-index: 7;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .cover-art{
+    background-color: white;
 }
 .navTitle:hover > .cover-art{
     /* left: -1px; */
     left: 91px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s;
 }
 .navTitle:not(:hover) > .cover-art{
     /* left: 91px; */
     left: -1px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s;
 }
 
-.navTitle > .A-{
+.navTitle > .A-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     /* left: 112px; */
@@ -124,23 +146,28 @@
     width: 19px;
     height: 100%;
     z-index: 7;
+    color: white;
 
     font-weight: 400;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .A-{
+    color: black;
+    background-color: white;
 }
 .navTitle:hover > .A-{
     /* left: 20px; */
     left: 112px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .A-{
     /* left: 112px; */
     left: 20px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s, color 1.5s;
 }
 
-.navTitle > .-rt{
+.navTitle > .-rt{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     /* left: 131px; */
@@ -148,18 +175,23 @@
     width: 21px;
     height: 100%;
     z-index: 6;
+    color: white;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .-rt{
+    color: black;
+    background-color: white;
 }
 .navTitle:hover > .-rt{
     /* left: -1px; */
     left: 131px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .-rt{
     /* left: 131px; */
     left: -1px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s, color 1.5s;
 }
 
 
@@ -175,20 +207,23 @@
     height: 100%;
     z-index: 5;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .cover-gallery{
+    background-color: white;
 }
 .navTitle:hover > .cover-gallery{
     /* left: -39px; */
     left: 74px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s;
 }
 .navTitle:not(:hover) > .cover-gallery{
     /* left: 74px; */
     left: -39px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s;
 }
 
-.navTitle > .G-{
+.navTitle > .G-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     /* left: 152px; */
@@ -196,23 +231,28 @@
     width: 24px;
     height: 100%;
     z-index: 5;
+    color: white;
 
     font-weight: 400;
 
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .G-{
+    color: black;
+    background-color: white;
 }
 .navTitle:hover > .G-{
     /* left: 39px; */
     left: 152px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .G-{
     /* left: 152px; */
     left: 39px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s, color 1.5s;
 }
 
-.navTitle > .-allery{
+.navTitle > .-allery{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     /* left: 176px; */
@@ -220,18 +260,23 @@
     width: 78px;
     height: 100%;
     z-index: 4;
+    color: white;
     
-    background-color: red;
+    background-color: rgb(10, 10, 10);
+}
+.navArea.active .navTitle .-allery{
+    color: black;
+    background-color: white;
 }
 .navTitle:hover > .-allery{
     /* left: -39px; */
     left: 176px;
-    transition: left .6s ease-in-out .1s;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .-allery{
     /* left: 176px; */
     left: -39px;
-    transition: left .5s;
+    transition: left .5s, background-color 1.5s, color 1.5s;
 }
 
 
@@ -248,14 +293,18 @@
 
 
 
-.navCategoryContainer{
+.navCategoryContainer{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     right: 0;
     width: 500px;
     height: 100%;
 
-    background-color: aqua;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
+}
+.navArea.active .navCategoryContainer{
+    background-color: white;
 }
 
 
@@ -263,15 +312,18 @@
 
 
 /* ---------------------------------------------------------------- */
-.navCategoryBackground{
+.navCategoryBackground{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     right: -500px;
     width: 500px;
     height: 100%;
 
-    background-color: blue;
-    transition: right .5s;
+    background-color: rgb(10, 10, 10);
+    transition: right .5s, background-color 1.5s;
+}
+.navArea.active .navCategoryBackground{
+    background-color: white;
 }
 .navCategoryBackground.active{
     right: 0;
@@ -293,40 +345,45 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-    background-color: blueviolet;
 }
 .navButton{
     position: relative;
-    
-    background-color: brown;
     cursor: pointer;
 }
 
-.navButton > p{
-    font-size: 17px;
+.navButton > p{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    font-size: 15px;
     font-weight: 200;
+    color: white;
+    transition: color 1.5s;
+}
+.navArea.active .navButton p{
+    color: black;
 }
 
 
-.navcExplore > .underlineLeft{
+.navcExplore > .underlineLeft{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     bottom: 0;
     right: 50%;
     width: 0;
     height: 1px;
-    transition: width .5s;
 
-    background-color: black;
+    background-color: white;
+    transition: width .5s, background-color 1.5s;
 }
-.navcExplore > .underlineRight{
+.navcExplore > .underlineRight{/* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
     height: 1px;
-    transition: width .5s;
 
+    background-color: white;
+    transition: width .5s, background-color 1.5s;
+}
+.navArea.active .navcExplore .underlineLeft,
+.navArea.active .navcExplore .underlineRight{
     background-color: black;
 }
 .navcExplore:hover > .underlineLeft,
@@ -338,24 +395,28 @@
     width: 50%;
 }
 
-.navcAbout > .underlineLeft{
+.navcAbout > .underlineLeft{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     bottom: 0;
     right: 50%;
     width: 0;
     height: 1px;
-    transition: width .5s;
 
-    background-color: black;
+    background-color: white;
+    transition: width .5s, background-color 1.5s;
 }
-.navcAbout > .underlineRight{
+.navcAbout > .underlineRight{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
     height: 1px;
-    transition: width .5s;
 
+    background-color: white;
+    transition: width .5s, background-color 1.5s;
+}
+.navArea.active .navcAbout .underlineLeft,
+.navArea.active .navcAbout .underlineRight{
     background-color: black;
 }
 .navcAbout:hover > .underlineLeft,
@@ -374,7 +435,7 @@
 
 
 /* ----------------------- Bar Negative ----------------------- */
-.navBarNegative{
+.navBarNegative{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
     right: 0;
@@ -384,15 +445,21 @@
     cursor: none;
     pointer-events: none;
 
-    background-color: rgba(255, 255, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     transition: background-color .5s, right .5s, width .5s;
 }
-.navBarNegative.active{
+.navArea.active .navBarNegative{
+    background-color: rgba(0, 0, 0, 0);
+}
+.navBarNegative.active{ /* ------------------------------------- beginningEnd ------------------------------------- */
     cursor: pointer;
     pointer-events: all;
     right: 500px;
     width: calc(100% - 500px);
-    background-color: rgba(255, 255, 0, .7);
+    background-color: rgba(255, 255, 255, .7);
+}
+.navArea.active .navBarNegative.active{
+    background-color: rgba(0, 0, 0, .7);
 }
 
 
@@ -411,23 +478,26 @@
 
 /* ----------------------- Nav Info ----------------------- */
 
-.navInfo{
+.navInfo{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 50px;
     right: -500px;
     width: 500px;
     height: calc(100% - 50px);
-    transition: right .5s;
     pointer-events: all;
 
-    background-color: blue;
+    background-color: rgb(10, 10, 10);
+    transition: right .5s, background-color 1.5s;
+}
+.navArea.active .navInfo{
+    background-color: white;
 }
 .navInfo.active{
     right: 0px;
 }
 
 
-.navInfoNegative{
+.navInfoNegative{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 10px;
     right: 0;
@@ -436,15 +506,21 @@
     cursor: none;
     pointer-events: none;
 
-    background-color: rgba(255, 255, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     transition: background-color .5s, right .5s, width .5s;
 }
-.navInfoNegative.active{
+.navArea.active .navInfoNegative{
+    background-color: rgba(0, 0, 0, 0);
+}
+.navInfoNegative.active{ /* ------------------------------------- beginningEnd ------------------------------------- */
     cursor: pointer;
     pointer-events: all;
     width: calc(100% - 500px);
     right: 500px;
-    background-color: rgba(255, 255, 0, .7);
+    background-color: rgba(255, 255, 255, .7);
+}
+.navArea.active .navInfoNegative.active{
+    background-color: rgba(0, 0, 0, .7);
 }
 
 
@@ -456,8 +532,56 @@
     width: 80%;
     height: 40%;
 
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
+.naviBorderTop{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.naviBorderRight{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.naviBorderBottom{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.naviBorderLeft{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.navArea.active .naviBorderTop,
+.navArea.active .naviBorderRight,
+.navArea.active .naviBorderBottom,
+.navArea.active .naviBorderLeft{
+    background-color: black;
+}
+
+
 
 
 .naviList .exploredUnorderedList{
@@ -481,7 +605,7 @@
     z-index: 5;
     /* pointer-events: none; */
     
-    background-color: red;
+    /* background-color: red; */
 }
 .naviList .exploredUnorderedList .exploredLi.active{
     top: 0;
@@ -489,6 +613,8 @@
     z-index: 6;
     /* pointer-events: all; */
 }
+
+
 
 .naviList .aboutUnorderedList{
     position: absolute;
@@ -509,13 +635,25 @@
     z-index: 5;
     /* pointer-events: none; */
 
-    background-color: red;
+    /* background-color: red; */
 }
 .naviList .aboutUnorderedList .aboutLi.active{
     top: 0;
     opacity: 1;
     z-index: 6;
     /* pointer-events: all; */
+}
+
+
+/* ------------------------------------- beginningEnd ------------------------------------- */
+.naviList .exploredUnorderedList .exploredLi p,
+.naviList .aboutUnorderedList .aboutLi p{
+    color: white;
+    transition: color 1.5s;
+}
+.navArea.active .naviList .exploredUnorderedList .exploredLi p,
+.navArea.active .naviList .aboutUnorderedList .aboutLi p{
+    color: black;
 }
 
 
@@ -527,3 +665,30 @@
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ naviDivider ------------------------------------------ */
+
+
+
+.naviDivider{ /* ------------------------------------- beginningEnd ------------------------------------- */
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.navArea.active .naviDivider{
+    background-color: black;
+}

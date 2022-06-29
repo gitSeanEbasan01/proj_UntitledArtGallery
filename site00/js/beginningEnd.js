@@ -1,6 +1,7 @@
 let betsTitle = document.querySelector('.titleSection'),
     beCurrentStudies = document.querySelector('.currentStudies'),
 
+    beNavigationArea = document.querySelector('.navArea'),
     beOverallContainer = document.querySelector('.overallContainer');
 
 let option00 = {
@@ -16,6 +17,8 @@ let setItemActive00 = (entries => {
             if(entry.target.classList.contains('currentStudies')){
                 beOverallContainer.classList.add('active');
                 betsTitle.classList.add('active');
+
+                beNavigationArea.classList.add('active');
             }
         }
     })
