@@ -33,7 +33,7 @@
     position: absolute;
     top: 10%;
     left: 50px;
-    width: 254px;
+    width: 63px;
     height: 80%;
     font-size: 30px;
     font-weight: 200;
@@ -41,7 +41,10 @@
     display: flex;
     align-items: center;
 
-    background-color: red;
+    background-color: blue;
+}
+.navTitle:hover{
+    width: 254px;
 }
 
 
@@ -294,10 +297,75 @@
     background-color: blueviolet;
 }
 .navButton{
+    position: relative;
+    
     background-color: brown;
     cursor: pointer;
 }
 
+.navButton > p{
+    font-size: 17px;
+    font-weight: 200;
+}
+
+
+.navcExplore > .underlineLeft{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+
+    background-color: black;
+}
+.navcExplore > .underlineRight{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+
+    background-color: black;
+}
+.navcExplore:hover > .underlineLeft,
+.navcExplore:hover > .underlineRight{
+    width: 50%;
+}
+.navcExplore.active > .underlineLeft,
+.navcExplore.active > .underlineRight{
+    width: 50%;
+}
+
+.navcAbout > .underlineLeft{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+
+    background-color: black;
+}
+.navcAbout > .underlineRight{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+
+    background-color: black;
+}
+.navcAbout:hover > .underlineLeft,
+.navcAbout:hover > .underlineRight{
+    width: 50%;
+}
+.navcAbout.active > .underlineLeft,
+.navcAbout.active > .underlineRight{
+    width: 50%;
+}
 
 
 
@@ -309,21 +377,22 @@
 .navBarNegative{
     position: absolute;
     top: 0;
-    right: 500px;
-    width: calc(100% - 500px);
+    right: 0;
+    width: 100%;
     height: 100%;
     z-index: 10;
     cursor: none;
     pointer-events: none;
 
     background-color: rgba(255, 255, 0, 0);
-    transition: background-color .5s;
+    transition: background-color .5s, right .5s, width .5s;
 }
 .navBarNegative.active{
     cursor: pointer;
     pointer-events: all;
+    right: 500px;
+    width: calc(100% - 500px);
     background-color: rgba(255, 255, 0, .7);
-    transition: background-color .5s ease-in-out .3s;
 }
 
 
@@ -361,20 +430,21 @@
 .navInfoNegative{
     position: absolute;
     top: 10px;
-    right: 500px;
-    width: calc(100% - 500px);
+    right: 0;
+    width: 100%;
     height: calc(100% - 10px);
     cursor: none;
     pointer-events: none;
 
     background-color: rgba(255, 255, 0, 0);
-    transition: background-color .5s;
+    transition: background-color .5s, right .5s, width .5s;
 }
 .navInfoNegative.active{
     cursor: pointer;
     pointer-events: all;
+    width: calc(100% - 500px);
+    right: 500px;
     background-color: rgba(255, 255, 0, .7);
-    transition: background-color .5s ease-in-out .3s;
 }
 
 

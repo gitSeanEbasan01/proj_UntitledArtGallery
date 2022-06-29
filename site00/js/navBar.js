@@ -16,6 +16,10 @@ navNegative.addEventListener('click', clickNegative);
 navInfoNegative.addEventListener('click', clickNegative);
 
 function clickExplore(){
+    navcExplore.classList.add('active');
+
+    navcAbout.classList.remove('active');
+    
     navcBackground.classList.add('active');
     navNegative.classList.add('active');
 
@@ -41,6 +45,10 @@ function clickExplore(){
 
 };
 function clickAbout(){
+    navcAbout.classList.add('active');
+
+    navcExplore.classList.remove('active');
+    
     navcBackground.classList.add('active');
     navNegative.classList.add('active');
 
@@ -70,6 +78,9 @@ function clickAbout(){
 
 
 function clickNegative(){
+    navcExplore.classList.remove('active');
+    navcAbout.classList.remove('active');
+    
     navcBackground.classList.remove('active');
     navNegative.classList.remove('active');
     
