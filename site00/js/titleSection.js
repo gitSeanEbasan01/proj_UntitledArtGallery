@@ -3,6 +3,8 @@ const   descriptionBorder = document.querySelector('.descriptionBorder'),
         textUntitled = document.querySelector('.titleText_Untitled'),
         textArtGallery = document.querySelector('.titleText_Art-Gallery'),
         
+        introNavArea = document.querySelector('.navArea'),
+        
         untitled = [...document.querySelectorAll('.text-untitled')],
         artGallery = [...document.querySelectorAll('.text-art-gallery')],
         description = document.querySelector('.description'),
@@ -20,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
         descriptionBorder.classList.add('active');
         textUntitled.classList.add('borderActive');
         textArtGallery.classList.add('borderActive');
+
+        introNavArea.classList.add('intro');
     }, 1000);
     
     // Primary Fade

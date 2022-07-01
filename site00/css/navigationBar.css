@@ -9,8 +9,13 @@
     height: 100%;
     z-index: 5;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
     
     /* background-color: violet; */
+}
+.navArea.intro{
+    opacity: 1;
 }
 
 .navBar{ /* ------------------------------------- beginningEnd ------------------------------------- */
@@ -36,7 +41,7 @@
 .navTitle{
     position: absolute;
     top: 10%;
-    left: 50px;
+    left: 95px;
     width: 63px;
     height: 80%;
     font-size: 30px;
@@ -93,6 +98,7 @@
     height: 100%;
     z-index: 8;
     color: white;
+    opacity: 0;
 
     background-color: rgb(10, 10, 10);
 }
@@ -103,12 +109,14 @@
 .navTitle:hover > .-ntitled{
     /* left: -92px; */
     left: 20px;
-    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
+    opacity: 1;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 .navTitle:not(:hover) > .-ntitled{
     /* left: 20px; */
     left: -92px;
-    transition: left .5s, background-color 1.5s, color 1.5s;
+    opacity: 0;
+    transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 
 
@@ -176,6 +184,7 @@
     height: 100%;
     z-index: 6;
     color: white;
+    opacity: 0;
 
     background-color: rgb(10, 10, 10);
 }
@@ -186,12 +195,14 @@
 .navTitle:hover > .-rt{
     /* left: -1px; */
     left: 131px;
-    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
+    opacity: 1;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 .navTitle:not(:hover) > .-rt{
     /* left: 131px; */
     left: -1px;
-    transition: left .5s, background-color 1.5s, color 1.5s;
+    opacity: 0;
+    transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 
 
@@ -261,6 +272,7 @@
     height: 100%;
     z-index: 4;
     color: white;
+    opacity: 0;
     
     background-color: rgb(10, 10, 10);
 }
@@ -271,12 +283,14 @@
 .navTitle:hover > .-allery{
     /* left: -39px; */
     left: 176px;
-    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
+    opacity: 1;
+    transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 .navTitle:not(:hover) > .-allery{
     /* left: 176px; */
     left: -39px;
-    transition: left .5s, background-color 1.5s, color 1.5s;
+    opacity: 0;
+    transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 
 
