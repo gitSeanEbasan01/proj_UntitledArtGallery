@@ -19,6 +19,7 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
   - [x] overallContainer background color transition modification
 - [x] Navbar (no hamburger oops)
 - [ ] Media Query | Make website look good on different screen resolutions and on other devices as well(phones, tablets, etc.)
+- [ ] Optimize image
 <br />
 
 - [ ] Other Pages
@@ -30,3 +31,6 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 **developersNote-070122:** <br />
 Project will temporarily be on hold. Continuation will be on the month of August 2022. Need to get back to my learning phase since the development phase on the month of June burnt me out and I kinda wanna move forward and learn some Back-End Frameworks, Nodejs, and the use of public APIs to have more cooler projects.
 In the meantime, I will slowly work on **Media Queries** to have more of a responsive design for the website as well as it being more mobile friendly.
+
+**developersNote-080122:** <br />
+The continuation of the project will start today. Unfortunately, I wasn't able to learn anything during the month of July due to life, camping, and procrastination. Currently, I'm reviewing the code that I worked on in the previous months and am glad that it doesn't look like ancient hieroglyphics, especially after a month of not seeing it. While continuing, I will learn NodeJS if I wanna progress in this Software Development journey. I'll also be tackling Media Query, image optimization, and an extra page for the website. That is the plan, however, we'll see if I'll stick through it.
