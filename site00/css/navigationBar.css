@@ -41,7 +41,7 @@
 .navTitle{
     position: absolute;
     top: 10%;
-    left: 95px;
+    /* left: 95px; */
     width: 63px;
     height: 80%;
     font-size: 30px;
@@ -54,6 +54,16 @@
 }
 .navTitle:hover{
     width: 254px;
+}
+@media (min-width: 660px) {
+    .navTitle{
+        left: 95px;
+    }
+}
+@media screen and (max-width: 659px) {
+    .navTitle{
+        left: 50px;
+    }
 }
 
 
@@ -311,7 +321,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 500px;
+    
     height: 100%;
 
     background-color: rgb(10, 10, 10);
@@ -319,6 +329,21 @@
 }
 .navArea.active .navCategoryContainer{
     background-color: white;
+}
+@media (min-width: 850px) {
+    .navCategoryContainer{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 849px) {
+    .navCategoryContainer{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 504px) {
+    .navCategoryContainer{
+        width: 150px;
+    }
 }
 
 
