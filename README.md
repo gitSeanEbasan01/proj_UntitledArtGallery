@@ -11,6 +11,11 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 - No idea what it looks like on the phone.
 - Should probably use hamburger icon for mobile users.
 
+**projectObservations080322:** <br />
+- I should've worked on media query in the early stages of this project. Especially when it comes to mobile and touch screen mechanics.
+- This project is a mess. I went way too ambitious with my ability to code without mastering the fundamentals.
+- Solution: Slowly work on organizing and retouching this project. Small progress with consistency and efficiency is key.
+
 <br />
 
 **Tasks:**
