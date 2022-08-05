@@ -1,20 +1,19 @@
 # proj_UntitledArtGallery
 Website for my artworks using HTML, CSS, Javascript.
 This project will be used for my portfolio. <br />
-I'll be utilizing the few things I learned in Web Development in the past 2 months of grinding.
+I'll be utilizing the few things I learned in Web Development in the past few months of grinding.
 https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 
-**projectIssue080222:** <br />
+**projectIssues080222:** <br />
 - In the smallest query, there's no way of exiting the nav menu since it took all the negative space for exiting. Possible solution is to use the nav category button itself to exit.
 - Project title is on top of the nav menu.
 - Nav category button should extend when active.
 - No idea what it looks like on the phone.
 - Should probably use hamburger icon for mobile users.
 
-**projectObservations080322:** <br />
-- I should've worked on media query in the early stages of this project. Especially when it comes to mobile and touch screen mechanics.
-- This project is a mess. I went way too ambitious with my ability to code without mastering the fundamentals.
-- Solution: Slowly work on organizing and retouching this project. Small progress with consistency and efficiency is key.
+**projectIssues080522:** <br />
+- I need to apply the current browser width to the media query so that the width of navInfo will somehow set itself, to what I can say, in realtime. Possible solution: Look up somewhere in the css section where I used the browser width for some sort of mechanic a few months ago and use that as a reference.
+
 
 <br />
 
@@ -37,6 +36,10 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 - [ ] Other Pages
   - [ ] ...
 
+**projectObservations080322:** <br />
+- I should've worked on media query in the early stages of this project. Especially when it comes to mobile and touch screen mechanics.
+- This project is a mess. I went way too ambitious with my ability to code without mastering the fundamentals.
+- Solution: Slowly work on organizing and retouching this project. Small progress with consistency and efficiency is key.
 
 <br />
 
