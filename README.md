@@ -12,7 +12,10 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 - Should probably use hamburger icon for mobile users.
 
 **projectIssues080522:** <br />
-- I need to apply the current browser width to the media query so that the width of navInfo will somehow set itself, to what I can say, in realtime. Possible solution: Look up somewhere in the css section where I used the browser width for some sort of mechanic a few months ago and use that as a reference.
+- [Done] I need to apply the current browser width to the media query so that the width of navInfo will somehow set itself, to what I can say, in realtime. Possible solution: Look up somewhere in the css section where I used the browser width for some sort of mechanic a few months ago and use that as a reference.
+
+**projectUpdate080822:** <br />
+- Successfully and currently working on the browser width for navInfo media query. Still needs more work but progress for today was decent.
 
 
 <br />
