@@ -514,14 +514,18 @@
 
 
 
+:root{
+    --app-nawidth: 100%;
+}
+
 
 /* ----------------------- Nav Info ----------------------- */
 
 .navInfo{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 50px;
-    right: -500px;
-    width: 500px;
+    /* right: -500px; */
+    /* width: 500px; */
     height: calc(100% - 50px);
     pointer-events: all;
 
@@ -534,6 +538,47 @@
 .navInfo.active{
     right: 0px;
 }
+/* iPhone SE */
+/* @media screen and (min-width: 375px) {
+    .navInfo{
+        right: -375px;
+        width: 375px;
+    }
+} */
+/* iPhone 12 Pro */
+/* @media screen and (min-width: 390px) {
+    .navInfo{
+        right: -390px;
+        width: 390px;
+    }
+} */
+/* Pixel 5 */
+/* @media screen and (min-width: 393px) {
+    .navInfo{
+        right: -393px;
+        width: 393px;
+    }
+} */
+/* iPhone XR */
+/* @media screen and (min-width: 414px) {
+    .navInfo{
+        right: -414px;
+        width: 414px;
+    }
+} */
+@media screen and (min-width: 800px) {
+    .navInfo{
+        right: -500px;
+        width: 500px;
+    }
+}
+@media (max-width: 799px) {
+    .navInfo{
+        right: calc(var(--app-nawidth) * -1);
+        width: var(--app-nawidth);
+    }
+}
+
 
 
 .navInfoNegative{ /* ------------------------------------- beginningEnd ------------------------------------- */
@@ -554,12 +599,24 @@
 .navInfoNegative.active{ /* ------------------------------------- beginningEnd ------------------------------------- */
     cursor: pointer;
     pointer-events: all;
-    width: calc(100% - 500px);
-    right: 500px;
+    /* width: calc(100% - 500px); */
+    /* right: 500px; */
     background-color: rgba(255, 255, 255, .7);
 }
 .navArea.active .navInfoNegative.active{
     background-color: rgba(0, 0, 0, .7);
+}
+@media (max-width: 799px) {
+    .navInfoNegative.active{
+        width: calc(100% - var(--app-nawidth));
+        right: var(--app-nawidth);
+    }
+}
+@media screen and (min-width: 800px) {
+    .navInfoNegative.active{
+        width: calc(100% - 500px);
+        right: 500px;
+    }
 }
 
 
