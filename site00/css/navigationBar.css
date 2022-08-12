@@ -313,7 +313,9 @@
 
 
 
-
+:root{
+    --app-nawidth: 100%;
+}
 
 
 
@@ -321,28 +323,25 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 500px;
     
     height: 100%;
+    z-index: 12;
 
     background-color: rgb(10, 10, 10);
-    transition: background-color 1.5s;
+    transition: width .5s, background-color 1.5s;
 }
 .navArea.active .navCategoryContainer{
     background-color: white;
 }
-@media (min-width: 850px) {
-    .navCategoryContainer{
+@media screen and (min-width: 800px) {
+    .navCategoryContainer.active{
         width: 500px;
     }
 }
-@media screen and (max-width: 849px) {
-    .navCategoryContainer{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 504px) {
-    .navCategoryContainer{
-        width: 150px;
+@media (max-width: 799px) {
+    .navCategoryContainer.active{
+        width: var(--app-nawidth);
     }
 }
 
@@ -354,9 +353,10 @@
 .navCategoryBackground{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
-    right: -500px;
-    width: 500px;
+    /* right: -800px; */
+    /* width: 800px; */
     height: 100%;
+    z-index: 11;
 
     background-color: rgb(10, 10, 10);
     transition: right .5s, background-color 1.5s;
@@ -367,6 +367,19 @@
 .navCategoryBackground.active{
     right: 0;
 }
+@media screen and (min-width: 800px) {
+    .navCategoryBackground{
+        right: -500px;
+        width: 500px;
+    }
+}
+@media (max-width: 799px) {
+    .navCategoryBackground{
+        right: calc(var(--app-nawidth) * -1);
+        width: var(--app-nawidth);
+    }
+}
+
 /* ---------------------------------------------------------------- */
 
 
@@ -379,6 +392,7 @@
     right: 10%;
     width: 80%;
     height: 80%;
+    z-index: 13;
 
     display: flex;
     flex-direction: row;
@@ -409,9 +423,11 @@
     height: 1px;
 
     background-color: white;
+    z-index: 13;
     transition: width .5s, background-color 1.5s;
 }
-.navcExplore > .underlineRight{/* ------------------------------------- beginningEnd ------------------------------------- */
+.navcExplore > .underlineRight{
+    /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -467,6 +483,22 @@
     width: 50%;
 }
 
+.navceExit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 14;
+    pointer-events: none;
+    /* background-color: red; */
+}
+.navceExit.active{
+    pointer-events: all;
+}
+
+
+
 
 
 
@@ -480,7 +512,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 13;
     cursor: none;
     pointer-events: none;
 
@@ -493,30 +525,40 @@
 .navBarNegative.active{ /* ------------------------------------- beginningEnd ------------------------------------- */
     cursor: pointer;
     pointer-events: all;
-    right: 500px;
-    width: calc(100% - 500px);
+    /* right: 500px; */
+    /* width: calc(100% - 500px); */
     background-color: rgba(255, 255, 255, .7);
 }
 .navArea.active .navBarNegative.active{
     background-color: rgba(0, 0, 0, .7);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:root{
-    --app-nawidth: 100%;
+@media (max-width: 799px) {
+    .navBarNegative.active{
+        width: calc(100% - var(--app-nawidth));
+        right: var(--app-nawidth);
+    }
 }
+@media screen and (min-width: 800px) {
+    .navBarNegative.active{
+        width: calc(100% - 500px);
+        right: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------- Nav Info ----------------------- */
