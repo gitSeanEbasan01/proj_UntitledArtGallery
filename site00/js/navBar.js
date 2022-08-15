@@ -4,6 +4,7 @@ const   navcExplore = document.querySelector('.navcExplore'),
         naviAboutLi = [...document.querySelectorAll('.aboutLi')],
 
         navceExit = document.querySelector('.navceExit'),
+        navcaExit = document.querySelector('.navcaExit'),
 
         navcContainer = document.querySelector('.navCategoryContainer'),
         navcBackground = document.querySelector('.navCategoryBackground'),
@@ -33,10 +34,13 @@ function clickExplore(){
     navInfoNegative.classList.add('active');
 
     navceExit.classList.add('active');
+    navcaExit.classList.remove('active');
 
     setTimeout(() => {
         navceExit.addEventListener('click', clickExploreExit);
+        navcaExit.removeEventListener('click', clickAboutExit);
         navcExplore.removeEventListener('click', clickExplore);
+        navcAbout.addEventListener('click', clickAbout);
     })
 
 
@@ -68,6 +72,15 @@ function clickAbout(){
     navInfo.classList.add('active');
     navInfoNegative.classList.add('active');
 
+    navceExit.classList.remove('active');
+    navcaExit.classList.add('active');
+
+    setTimeout(() => {
+        navcaExit.addEventListener('click', clickAboutExit);
+        navceExit.removeEventListener('click', clickExploreExit);
+        navcAbout.removeEventListener('click', clickAbout);
+        navcExplore.addEventListener('click', clickExplore);
+    })
 
     setTimeout(() => {
         naviAboutLi.forEach((li, idx) =>{
@@ -92,6 +105,7 @@ function clickAbout(){
 
 function clickNegative(){
     navceExit.classList.remove('active');
+    navcaExit.classList.remove('active');
     
     navcExplore.classList.remove('active');
     navcAbout.classList.remove('active');
@@ -105,7 +119,9 @@ function clickNegative(){
 
     setTimeout(() => {
         navceExit.removeEventListener('click', clickExploreExit);
+        navcaExit.removeEventListener('click', clickAboutExit);
         navcExplore.addEventListener('click', clickExplore);
+        navcAbout.addEventListener('click', clickAbout);
     }, 500);
 
 
@@ -129,6 +145,7 @@ function clickNegative(){
 
 function clickExploreExit(){
     navceExit.classList.remove('active');
+    navcaExit.classList.remove('active');
 
     navcExplore.classList.remove('active');
     navcAbout.classList.remove('active');
@@ -143,6 +160,43 @@ function clickExploreExit(){
     setTimeout(() => {
         navceExit.removeEventListener('click', clickExploreExit);
         navcExplore.addEventListener('click', clickExplore);
+    }, 500);
+
+    naviExploredLi.forEach((li, idx) =>{
+        setTimeout(() => {
+            li.classList.remove('active');
+        }, idx == 0 ? (idx+1) * 200 :
+        idx == 1 ? idx * 100 :
+        idx == 2 ? (idx-1) * 0
+        : idx * 100 );
+    });
+
+    naviAboutLi.forEach((li, idx) =>{
+        setTimeout(() => {
+            li.classList.remove('active');
+        }, idx == 0 ? (idx+1) * 100 :
+        idx == 1 ? idx * 0
+        : idx * 100 );
+    });
+
+};
+function clickAboutExit(){
+    navceExit.classList.remove('active');
+    navcaExit.classList.remove('active');
+
+    navcExplore.classList.remove('active');
+    navcAbout.classList.remove('active');
+
+    navcContainer.classList.remove('active');
+    navcBackground.classList.remove('active');
+    navNegative.classList.remove('active');
+    
+    navInfo.classList.remove('active');
+    navInfoNegative.classList.remove('active');
+
+    setTimeout(() => {
+        navcaExit.removeEventListener('click', clickAboutExit);
+        navcAbout.addEventListener('click', clickAbout);
     }, 500);
 
     naviExploredLi.forEach((li, idx) =>{
