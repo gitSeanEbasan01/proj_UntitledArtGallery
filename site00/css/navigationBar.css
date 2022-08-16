@@ -55,12 +55,12 @@
 .navTitle:hover{
     width: 254px;
 }
-@media (min-width: 660px) {
+@media screen and (min-width: 850px) {
     .navTitle{
         left: 95px;
     }
 }
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 849px) {
     .navTitle{
         left: 50px;
     }
@@ -326,21 +326,24 @@
     width: 500px;
     
     height: 100%;
-    z-index: 12;
+    z-index: 3;
 
     background-color: rgb(10, 10, 10);
-    transition: width .5s, background-color 1.5s;
+    /* background-color: red; */
+    transition: width .5s, z-index .5s, background-color 1.5s;
 }
 .navArea.active .navCategoryContainer{
     background-color: white;
 }
 @media screen and (min-width: 800px) {
     .navCategoryContainer.active{
+        z-index: 12;
         width: 500px;
     }
 }
 @media (max-width: 799px) {
     .navCategoryContainer.active{
+        z-index: 12;
         width: var(--app-nawidth);
     }
 }
@@ -359,6 +362,7 @@
     z-index: 11;
 
     background-color: rgb(10, 10, 10);
+    /* background-color: red; */
     transition: right .5s, background-color 1.5s;
 }
 .navArea.active .navCategoryBackground{
@@ -509,6 +513,32 @@
 .navcaExit.active{
     pointer-events: all;
 }
+
+
+
+
+
+
+
+.navXButtonArea{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 50px;
+    height: 100%;
+    z-index: 4;
+    /* background-color: red; */
+}
+.navXButtonContainer{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: blue;
+}
+
+
 
 
 
