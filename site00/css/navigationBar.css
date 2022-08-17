@@ -527,15 +527,77 @@
     width: 50px;
     height: 100%;
     z-index: 4;
-    /* background-color: red; */
+
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
 }
+/* .navXButtonArea:hover{
+    background-color: rgb(80, 80, 80);
+    transition: background-color .2s;
+}
+.navXButtonArea:not(:hover){
+    background-color: black;
+    transition: background-color .2s;
+} */
+.navArea.active .navXButtonArea{
+    background-color: white;
+}
+/* .navArea.active .navXButtonArea:hover{
+    background-color: rgb(172, 172, 172);
+    transition: background-color .2s;
+}
+.navArea.active .navXButtonArea:not(:hover){
+    background-color: white;
+    transition: background-color .2s;
+} */
 .navXButtonContainer{
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 15%;
     width: 70%;
-    height: 70%;
-    background-color: blue;
+    height: 50%;
+
+    /* background-color: blue; */
+}
+
+.navXBarTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.navXBarMid{
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.navXBarBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+
+    background-color: white;
+    transition: background-color 1.5s;
+}
+.navArea.active .navXBarTop,
+.navArea.active .navXBarMid,
+.navArea.active .navXBarBottom{
+    background-color: rgb(10, 10, 10);
 }
 
 
