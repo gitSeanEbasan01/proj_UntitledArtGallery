@@ -428,7 +428,7 @@
 
     background-color: white;
     z-index: 13;
-    transition: width .5s, background-color 1.5s;
+    transition: width .2s, background-color 1.5s;
 }
 .navcExplore > .underlineRight{
     /* ------------------------------------- beginningEnd ------------------------------------- */
@@ -439,7 +439,7 @@
     height: 1px;
 
     background-color: white;
-    transition: width .5s, background-color 1.5s;
+    transition: width .2s, background-color 1.5s;
 }
 .navArea.active .navcExplore .underlineLeft,
 .navArea.active .navcExplore .underlineRight{
@@ -462,7 +462,7 @@
     height: 1px;
 
     background-color: white;
-    transition: width .5s, background-color 1.5s;
+    transition: width .2s, background-color 1.5s;
 }
 .navcAbout > .underlineRight{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
@@ -472,7 +472,7 @@
     height: 1px;
 
     background-color: white;
-    transition: width .5s, background-color 1.5s;
+    transition: width .2s, background-color 1.5s;
 }
 .navArea.active .navcAbout .underlineLeft,
 .navArea.active .navcAbout .underlineRight{
@@ -520,36 +520,23 @@
 
 
 
+
+
 .navXButtonArea{
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 35px;
     width: 50px;
     height: 100%;
     z-index: 4;
+    cursor: pointer;
 
     background-color: rgb(10, 10, 10);
     transition: background-color 1.5s;
 }
-/* .navXButtonArea:hover{
-    background-color: rgb(80, 80, 80);
-    transition: background-color .2s;
-}
-.navXButtonArea:not(:hover){
-    background-color: black;
-    transition: background-color .2s;
-} */
 .navArea.active .navXButtonArea{
     background-color: white;
 }
-/* .navArea.active .navXButtonArea:hover{
-    background-color: rgb(172, 172, 172);
-    transition: background-color .2s;
-}
-.navArea.active .navXButtonArea:not(:hover){
-    background-color: white;
-    transition: background-color .2s;
-} */
 .navXButtonContainer{
     position: absolute;
     top: 25%;
@@ -563,41 +550,46 @@
 .navXBarTop{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 3px;
     border-radius: 5px;
 
     background-color: white;
-    transition: background-color 1.5s;
+    transition: background-color 1.5s, width .2s;
 }
 .navXBarMid{
     position: absolute;
     transform: translate(0, -50%);
     top: 50%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 3px;
     border-radius: 5px;
 
     background-color: white;
-    transition: background-color 1.5s;
+    transition: background-color 1.5s, width .1s;
 }
 .navXBarBottom{
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 3px;
     border-radius: 5px;
 
     background-color: white;
-    transition: background-color 1.5s;
+    transition: background-color 1.5s, width .2s;
 }
 .navArea.active .navXBarTop,
 .navArea.active .navXBarMid,
 .navArea.active .navXBarBottom{
     background-color: rgb(10, 10, 10);
+}
+.navXButtonArea:hover .navXBarTop,
+.navXButtonArea:hover .navXBarMid,
+.navXButtonArea:hover .navXBarBottom{
+    width: 100%;
 }
 
 

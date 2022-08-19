@@ -11,15 +11,19 @@ const   navcExplore = document.querySelector('.navcExplore'),
         navNegative = document.querySelector('.navBarNegative'),
         
         navInfo = document.querySelector('.navInfo'),
-        navInfoNegative = document.querySelector('.navInfoNegative');
+        navInfoNegative = document.querySelector('.navInfoNegative'),
+        
+        
+        navXButtonArea = document.querySelector('.navXButtonArea');
 
 navcExplore.addEventListener('click', clickExplore);
 navcAbout.addEventListener('click', clickAbout);
 
-// navceExit.addEventListener('click', clickExploreExit);
-
 navNegative.addEventListener('click', clickNegative);
 navInfoNegative.addEventListener('click', clickNegative);
+
+
+navXButtonArea.addEventListener('click', clickExplore);
 
 function clickExplore(){
     navcExplore.classList.add('active');
