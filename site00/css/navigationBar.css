@@ -330,21 +330,33 @@
 
     background-color: rgb(10, 10, 10);
     /* background-color: red; */
-    transition: width .5s, z-index .5s, background-color 1.5s;
+    transition: width .5s, z-index .5s, background-color 1.5s, right .5s;
 }
 .navArea.active .navCategoryContainer{
     background-color: white;
 }
 @media screen and (min-width: 800px) {
+    .navCategoryContainer{
+        right: 0;
+    }
+}
+@media (max-width: 799px) {
+    .navCategoryContainer{
+        right: -500px;
+    }
+}
+@media screen and (min-width: 800px) {
     .navCategoryContainer.active{
         z-index: 12;
         width: 500px;
+        right: 0;
     }
 }
 @media (max-width: 799px) {
     .navCategoryContainer.active{
         z-index: 12;
         width: var(--app-nawidth);
+        right: 0;
     }
 }
 
@@ -528,7 +540,7 @@
     right: 35px;
     width: 50px;
     height: 100%;
-    z-index: 4;
+    z-index: 2;
     cursor: pointer;
 
     background-color: rgb(10, 10, 10);
