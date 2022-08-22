@@ -4,11 +4,15 @@ This project will be used for my portfolio. <br />
 I'll be utilizing the few things I learned in Web Development in the past few months of grinding.
 https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 
+**projectUpdate082222:** <br />
+- [Done] Media query in navBar is finished along with the hamburger button.
+- [Issue] Work on media query for the titleSection.
+
 **projectUpdate081222:** <br />
 - [Done] Able to add media query for navCategoryContainer. Separating in both active and non-active element.
 - [Done] Able to add a transparent exit for the explore button so there's no need to look for a negative space.
-- [Issue] Need to add media query for non-active navCategoryContainer. And based on media query, replace navButtons with a single "x" button. (800px)
-- [Issue] navcExplore underline glitch when using the button itself to exit.
+- [Done] Need to add media query for non-active navCategoryContainer. And based on media query, replace navButtons with a single "x" button. (800px)
+- [Done] navcExplore underline glitch when using the button itself to exit.
 - [Goal] Continue with the About button next session.
 
 **projectUpdate080822:** <br />
