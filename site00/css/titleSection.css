@@ -1,348 +1,330 @@
 
-@media (min-width: 200px) {
-
-    .titleSection{
-        position: relative;
-        width: 100%;
-        height: 110vh;
-        z-index: -3;
-
-        background-color: rgb(10, 10, 10);
-        transition: background-color 1.5s;
-    }
-    .titleSection.active{
-        background-color: white;
-    }
-
-    .tsTitle{
-        position: absolute;
-        top: 15%;
-        left: 5%;
-        width: 90%;
-        height: 50%;
-        z-index: -2;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        background-color: rgb(10, 10, 10);
-        transition: background-color 1.5s;
-        will-change: transform;
-
-        
-    }
-    .titleSection.active .tsTitle{
-        background-color: white;
-    }
 
 
+.titleSection{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    z-index: -3;
 
-    .tsBorders{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
+}
+.titleSection.active{
+    background-color: white;
+}
 
-        /* ------------------------------------------------ */
-        mix-blend-mode: difference;
-        color: white;
-    }
+.tsTitle{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    z-index: -2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
-    .tBorderTopLeft{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .tBorderTopRight{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .tBorderBottomLeft{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    .tBorderBottomRight{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    .tBorderTopLeft, .tBorderTopRight,
-    .tBorderBottomLeft, .tBorderBottomRight{
-        width: 0;
-        height: 1px;
-        opacity: 1;
-        z-index: 2;
-        background-color: #fff;
-        transition: 2s;
-    }
-    .tsTitle.borderActive .tBorderTopLeft, 
-    .tsTitle.borderActive .tBorderTopRight,
-    .tsTitle.borderActive .tBorderBottomLeft, 
-    .tsTitle.borderActive .tBorderBottomRight{
-        width: 50%;
-    }
-    .tsTitle.borderFade .tBorderTopLeft, 
-    .tsTitle.borderFade .tBorderTopRight,
-    .tsTitle.borderFade .tBorderBottomLeft, 
-    .tsTitle.borderFade .tBorderBottomRight{
-        opacity: 0;
-    }
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s;
+    will-change: transform;
 
-    .tBorderLeft,
-    .tBorderRight{
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        opacity: 0;
-        z-index: 1;
-        background-color: #fff;
-        transition: 2s;
-    }
-    .tBorderLeft{
-        top: 0;
-        left: 0;
-    }
-    .tBorderRight{
-        top: 0;
-        right: 0;
-    }
-    .tsTitle.borderActive .tBorderLeft,
-    .tsTitle.borderActive .tBorderRight{
-        opacity: 1;
-    }
-    .tsTitle.borderFade .tBorderLeft,
-    .tsTitle.borderFade .tBorderRight{
-        opacity: 0;
-    }
+    
+}
+.titleSection.active .tsTitle{
+    background-color: white;
+}
 
 
+
+.tsBorders{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
+}
+
+.tBorderTopLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tBorderTopRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tBorderBottomLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tBorderBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.tBorderTopLeft, .tBorderTopRight,
+.tBorderBottomLeft, .tBorderBottomRight{
+    width: 0;
+    height: 1px;
+    opacity: 1;
+    z-index: 2;
+    background-color: #fff;
+    transition: 2s;
+}
+.tsTitle.borderActive .tBorderTopLeft, 
+.tsTitle.borderActive .tBorderTopRight,
+.tsTitle.borderActive .tBorderBottomLeft, 
+.tsTitle.borderActive .tBorderBottomRight{
+    width: 50%;
+}
+.tsTitle.borderFade .tBorderTopLeft, 
+.tsTitle.borderFade .tBorderTopRight,
+.tsTitle.borderFade .tBorderBottomLeft, 
+.tsTitle.borderFade .tBorderBottomRight{
+    opacity: 0;
+}
+
+.tBorderLeft,
+.tBorderRight{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-color: #fff;
+    transition: 2s;
+}
+.tBorderLeft{
+    top: 0;
+    left: 0;
+}
+.tBorderRight{
+    top: 0;
+    right: 0;
+}
+.tsTitle.borderActive .tBorderLeft,
+.tsTitle.borderActive .tBorderRight{
+    opacity: 1;
+}
+.tsTitle.borderFade .tBorderLeft,
+.tsTitle.borderFade .tBorderRight{
+    opacity: 0;
+}
+
+
+.titleText_Untitled{
+    /* Overall Area */
+    position: absolute;
+    top: 20%;
+    /* right: 5%; */
+    width: 50%;
+    height: 30%;
+    z-index: 1;
+
+    /* For its children */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
+    transition: right .3s;
+}
+@media screen and (min-width: 850px) {
     .titleText_Untitled{
-        /* Overall Area */
-        position: absolute;
-        top: 20%;
         right: 5%;
-        width: 50%;
-        height: 30%;
-        z-index: 1;
+    }
+}
+@media (max-width: 849px) {
+    .titleText_Untitled{
+        right: 25%;
+    }
+}
+.uBorderTopLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.uBorderTopRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.uBorderBottomLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.uBorderBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.uBorderTopLeft, .uBorderTopRight,
+.uBorderBottomLeft, .uBorderBottomRight{
+    width: 0;
+    height: 1px;
+    opacity: 1;
+    background-color: #fff;
+    /* transition: width 2s; */
+}
+.titleText_Untitled.borderActive > .uBorderTopLeft, 
+.titleText_Untitled.borderActive > .uBorderTopRight,
+.titleText_Untitled.borderActive > .uBorderBottomLeft, 
+.titleText_Untitled.borderActive > .uBorderBottomRight{
+    width: 50%;
+    transition: 2s;
+}
+.titleText_Untitled.borderFade > .uBorderTopLeft, 
+.titleText_Untitled.borderFade > .uBorderTopRight,
+.titleText_Untitled.borderFade > .uBorderBottomLeft, 
+.titleText_Untitled.borderFade > .uBorderBottomRight{
+    opacity: 0;
+    transition: 2s;
+}
 
-        /* For its children */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
-        /* ------------------------------------------------ */
-        mix-blend-mode: difference;
-        color: white;
-    }
-    .uBorderTopLeft{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .uBorderTopRight{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .uBorderBottomLeft{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    .uBorderBottomRight{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    .uBorderTopLeft, .uBorderTopRight,
-    .uBorderBottomLeft, .uBorderBottomRight{
-        width: 0;
-        height: 1px;
-        opacity: 1;
-        background-color: #fff;
-        /* transition: width 2s; */
-    }
-    .titleText_Untitled.borderActive > .uBorderTopLeft, 
-    .titleText_Untitled.borderActive > .uBorderTopRight,
-    .titleText_Untitled.borderActive > .uBorderBottomLeft, 
-    .titleText_Untitled.borderActive > .uBorderBottomRight{
-        width: 50%;
-        transition: 2s;
-    }
-    .titleText_Untitled.borderFade > .uBorderTopLeft, 
-    .titleText_Untitled.borderFade > .uBorderTopRight,
-    .titleText_Untitled.borderFade > .uBorderBottomLeft, 
-    .titleText_Untitled.borderFade > .uBorderBottomRight{
-        opacity: 0;
-        transition: 2s;
-    }
+.uBorderLeft,
+.uBorderRight{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    opacity: 0;
+    background-color: #fff;
+    /* transition: 2s; */
+}
+.uBorderLeft{
+    top: 0;
+    left: 0;
+}
+.uBorderRight{
+    top: 0;
+    right: 0;
+}
+.titleText_Untitled.borderActive > .uBorderLeft,
+.titleText_Untitled.borderActive > .uBorderRight{
+    opacity: 1;
+    transition: 2s;
+}
+.titleText_Untitled.borderFade > .uBorderLeft,
+.titleText_Untitled.borderFade > .uBorderRight{
+    opacity: 0;
+    transition: 2s;
+}
 
-    .uBorderLeft,
-    .uBorderRight{
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        opacity: 0;
-        background-color: #fff;
-        /* transition: 2s; */
-    }
-    .uBorderLeft{
-        top: 0;
-        left: 0;
-    }
-    .uBorderRight{
-        top: 0;
-        right: 0;
-    }
-    .titleText_Untitled.borderActive > .uBorderLeft,
-    .titleText_Untitled.borderActive > .uBorderRight{
-        opacity: 1;
-        transition: 2s;
-    }
-    .titleText_Untitled.borderFade > .uBorderLeft,
-    .titleText_Untitled.borderFade > .uBorderRight{
-        opacity: 0;
-        transition: 2s;
-    }
+
+
+.titleText_Art-Gallery{
+    /* Overall Area */
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 60%;
+    height: 30%;
+    z-index: 1;
     
+    /* For its children */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
+}
+@media screen and (min-width: 850px){
     .titleText_Art-Gallery{
-        /* Overall Area */
-        position: absolute;
-        top: 50%;
         right: 5%;
-        width: 60%;
-        height: 30%;
-        z-index: 1;
-        
-        /* For its children */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-
-        /* ------------------------------------------------ */
-        mix-blend-mode: difference;
-        color: white;
     }
-    .agBorderTopLeft{
-        position: absolute;
-        top: 0;
-        left: 0;
+}
+@media (max-width: 849px) {
+    .titleText_Art-Gallery{
+        right: 20%;
     }
-    .agBorderTopRight{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .agBorderBottomLeft{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    .agBorderBottomRight{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    .agBorderTopLeft, .agBorderTopRight,
-    .agBorderBottomLeft, .agBorderBottomRight{
-        width: 0;
-        height: 1px;
-        opacity: 1;
-        background-color: #fff;
-        /* transition: 2s; */
-    }
-    .titleText_Art-Gallery.borderActive > .agBorderTopLeft, 
-    .titleText_Art-Gallery.borderActive > .agBorderTopRight,
-    .titleText_Art-Gallery.borderActive > .agBorderBottomLeft, 
-    .titleText_Art-Gallery.borderActive > .agBorderBottomRight{
-        width: 50%;
-        transition: 2s;
-    }
-    .titleText_Art-Gallery.borderFade > .agBorderTopLeft, 
-    .titleText_Art-Gallery.borderFade > .agBorderTopRight,
-    .titleText_Art-Gallery.borderFade > .agBorderBottomLeft, 
-    .titleText_Art-Gallery.borderFade > .agBorderBottomRight{
-        opacity: 0;
-        transition: 2s;
-    }
+}
+.agBorderTopLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.agBorderTopRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.agBorderBottomLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.agBorderBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.agBorderTopLeft, .agBorderTopRight,
+.agBorderBottomLeft, .agBorderBottomRight{
+    width: 0;
+    height: 1px;
+    opacity: 1;
+    background-color: #fff;
+    /* transition: 2s; */
+}
+.titleText_Art-Gallery.borderActive > .agBorderTopLeft, 
+.titleText_Art-Gallery.borderActive > .agBorderTopRight,
+.titleText_Art-Gallery.borderActive > .agBorderBottomLeft, 
+.titleText_Art-Gallery.borderActive > .agBorderBottomRight{
+    width: 50%;
+    transition: 2s;
+}
+.titleText_Art-Gallery.borderFade > .agBorderTopLeft, 
+.titleText_Art-Gallery.borderFade > .agBorderTopRight,
+.titleText_Art-Gallery.borderFade > .agBorderBottomLeft, 
+.titleText_Art-Gallery.borderFade > .agBorderBottomRight{
+    opacity: 0;
+    transition: 2s;
+}
 
-    .agBorderLeft,
-    .agBorderRight{
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        opacity: 0;
-        background-color: #fff;
-        transition: 2s;
-    }
-    .agBorderLeft{
-        top: 0;
-        left: 0;
-    }
-    .agBorderRight{
-        top: 0;
-        right: 0;
-    }
+.agBorderLeft,
+.agBorderRight{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    opacity: 0;
+    background-color: #fff;
+    transition: 2s;
+}
+.agBorderLeft{
+    top: 0;
+    left: 0;
+}
+.agBorderRight{
+    top: 0;
+    right: 0;
+}
 
-    .titleText_Art-Gallery.borderActive > .agBorderLeft,
-    .titleText_Art-Gallery.borderActive > .agBorderRight{
-        opacity: 1;
-        transition: 2s;
-    }
-    .titleText_Art-Gallery.borderFade > .agBorderLeft,
-    .titleText_Art-Gallery.borderFade > .agBorderRight{
-        opacity: 0;
-        transition: 2s;
-    }
-
-
-
-
-
-
-
-    .text-untitled{
-        position: relative;
-        font-size: 100px;
-        font-weight: 500;
-
-        top: -50px;
-        opacity: 0;
-        /* transition: 1.5s; */
-    }
-    .text-untitled.active{
-        top: 0;
-        opacity: 1;
-        transition: 1.5s;
-    }
-    .text-art-gallery{
-        position: relative;
-        font-size: 100px;
-        font-weight: 500;
-
-        top: 50px;
-        opacity: 0;
-        /* transition: 1.5s; */
-    }
-    .text-art-gallery.active{
-        top: 0;
-        opacity: 1;
-        transition: 1.5s;
-    }
-
-    .text-space{
-        width: 25px;
-    }
+.titleText_Art-Gallery.borderActive > .agBorderLeft,
+.titleText_Art-Gallery.borderActive > .agBorderRight{
+    opacity: 1;
+    transition: 2s;
+}
+.titleText_Art-Gallery.borderFade > .agBorderLeft,
+.titleText_Art-Gallery.borderFade > .agBorderRight{
+    opacity: 0;
+    transition: 2s;
+}
 
 
 
@@ -350,129 +332,38 @@
 
 
 
+.text-untitled{
+    position: relative;
+    font-size: 100px;
+    font-weight: 500;
 
+    top: -50px;
+    opacity: 0;
+    /* transition: 1.5s; */
+}
+.text-untitled.active{
+    top: 0;
+    opacity: 1;
+    transition: 1.5s;
+}
+.text-art-gallery{
+    position: relative;
+    font-size: 100px;
+    font-weight: 500;
 
+    top: 50px;
+    opacity: 0;
+    /* transition: 1.5s; */
+}
+.text-art-gallery.active{
+    top: 0;
+    opacity: 1;
+    transition: 1.5s;
+}
 
-
-    .tsTitleDescription{
-        position: absolute;
-        top: 68%;
-        left: 0;
-        width: 100%;
-        height: 30%;
-
-        /* ------------------------------------------------ */
-        mix-blend-mode: difference;
-        color: white;
-    }
-
-    .titleDescription_Container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        height: 60%;
-    }
-
-    .description{
-        position: absolute;
-        top: 30%;
-        left: 0;
-        width: 40%;
-        height: 19%;
-
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-    .description > p{
-        position: relative;
-        top: -20px;
-        opacity: 0;
-        
-        padding-left: 5%;
-        font-size: 20px;
-        font-weight: 400;
-
-        /* color: rgb(77, 77, 77); */
-        /* color: white; */
-        color: rgb(200, 200, 200);
-    }
-    .description.active > p{
-        top: 0;
-        opacity: 1;
-        transition: 1s ease-in-out 2s;
-    }
-
-
-    .descriptionBorder{
-        position: absolute;
-        top: 49%;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        border-radius: 50%;
-        opacity: .5;
-    }
-    .borderLeftSide{
-        position: absolute;
-        top: 0;
-        right: 50%;
-        width: 0;
-        height: 100%;
-        opacity: 1;
-        /* background-color: black; */
-        background-color: white;
-    }
-    .borderRightSide{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 100%;
-        opacity: 1;
-        /* background-color: black; */
-        background-color: white;
-    }
-    .descriptionBorder.active > .borderLeftSide,
-    .descriptionBorder.active > .borderRightSide{
-        width: 50%;
-        transition: 2s;
-    }
-
-
-    .name{
-        position: absolute;
-        top: 50%;
-        right: 0;
-        width: 30%;
-        height: 20%;
-
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-    .name > p{
-        position: relative;
-        top: 20px;
-        opacity: 0;
-        
-        padding-right: 5%;
-        font-size: 20px;
-        font-weight: 400;
-
-        /* color: rgb(77, 77, 77); */
-        color: rgb(200, 200, 200);
-    }
-    .name > p > span{
-        font-weight: 200;
-    }
-    .name.active > p{
-        top: 0;
-        opacity: 1;
-        transition: 1s ease-in-out 2.5s;
-    }
+.text-space{
+    width: 25px;
+}
 
 
 
@@ -483,36 +374,177 @@
 
 
 
+
+.tsTitleDescription{
+    position: absolute;
+    top: 68%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+
+    /* ------------------------------------------------ */
+    mix-blend-mode: difference;
+    color: white;
+}
+
+.titleDescription_Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 60%;
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 40%;
+    height: 19%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.description > p{
+    position: relative;
+    top: -20px;
+    opacity: 0;
+    
+    padding-left: 5%;
+    font-size: 20px;
+    font-weight: 400;
+
+    /* color: rgb(77, 77, 77); */
+    /* color: white; */
+    color: rgb(200, 200, 200);
+}
+.description.active > p{
+    top: 0;
+    opacity: 1;
+    transition: 1s ease-in-out 2s;
+}
+
+
+.descriptionBorder{
+    position: absolute;
+    top: 49%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 50%;
+    opacity: .5;
+}
+.borderLeftSide{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 0;
+    height: 100%;
+    opacity: 1;
+    /* background-color: black; */
+    background-color: white;
+}
+.borderRightSide{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    opacity: 1;
+    /* background-color: black; */
+    background-color: white;
+}
+.descriptionBorder.active > .borderLeftSide,
+.descriptionBorder.active > .borderRightSide{
+    width: 50%;
+    transition: 2s;
+}
+
+
+.name{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: 20%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.name > p{
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    
+    padding-right: 5%;
+    font-size: 20px;
+    font-weight: 400;
+
+    /* color: rgb(77, 77, 77); */
+    color: rgb(200, 200, 200);
+}
+.name > p > span{
+    font-weight: 200;
+}
+.name.active > p{
+    top: 0;
+    opacity: 1;
+    transition: 1s ease-in-out 2.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.titleBackgroundImage{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* width: 67%; */
+    height: 100%;
+    z-index: .5;
+    overflow: hidden;
+
+    transition: width .3s;
+}
+@media screen and (min-width: 700px) {
     .titleBackgroundImage{
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        width: 67%;
-        height: 100%;
-        z-index: .5;
-        overflow: hidden;
+        width: 70%;
+        /* 67%??? */
     }
-
-    .titleBackgroundImage .img{
-        background-image: url('img/notebook.jpeg');
-        
-        position: absolute;
-        top: 0;
-        left: 0;
+}
+@media (max-width: 699px) {
+    .titleBackgroundImage{
         width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-size: cover;
-        background-position: center;
-        /* transform: scale(1.3); */
-        /* transition: 2s; */
     }
+}
+
+.titleBackgroundImage .img{
+    background-image: url('img/notebook.jpeg');
     
-    .titleBackgroundImage.active > .img{
-        opacity: 1;
-        transition: 2s;
-        /* transform: scale(1); */
-    }
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    /* transform: scale(1.3); */
+    /* transition: 2s; */
+}
+
+.titleBackgroundImage.active > .img{
+    opacity: 1;
+    transition: 2s;
+    /* transform: scale(1); */
 }
