@@ -124,10 +124,10 @@
 .titleText_Untitled{
     /* Overall Area */
     position: absolute;
-    top: 20%;
+    /* top: 20%; */
     /* right: 5%; */
     width: 50%;
-    height: 30%;
+    /* height: 30%; */
     z-index: 1;
 
     /* For its children */
@@ -139,7 +139,7 @@
     /* ------------------------------------------------ */
     mix-blend-mode: difference;
     color: white;
-    transition: right .3s;
+    transition: right .3s, top .3s, height .3s;
 }
 @media screen and (min-width: 850px) {
     .titleText_Untitled{
@@ -149,6 +149,18 @@
 @media (max-width: 849px) {
     .titleText_Untitled{
         right: 25%;
+    }
+}
+@media screen and (min-width: 600px){
+    .titleText_Untitled{
+        top: 20%;
+        height: 30%;
+    }
+}
+@media (max-width: 599px){
+    .titleText_Untitled{
+        top: 30%;
+        height: 20%;
     }
 }
 .uBorderTopLeft{
@@ -228,9 +240,9 @@
     /* Overall Area */
     position: absolute;
     top: 50%;
-    right: 5%;
+    /* right: 5%; */
     width: 60%;
-    height: 30%;
+    /* height: 30%; */
     z-index: 1;
     
     /* For its children */
@@ -243,6 +255,8 @@
     /* ------------------------------------------------ */
     mix-blend-mode: difference;
     color: white;
+
+    transition: right .3s, height .3s;
 }
 @media screen and (min-width: 850px){
     .titleText_Art-Gallery{
@@ -252,6 +266,16 @@
 @media (max-width: 849px) {
     .titleText_Art-Gallery{
         right: 20%;
+    }
+}
+@media screen and (min-width: 600px){
+    .titleText_Art-Gallery{
+        height: 30%;
+    }
+}
+@media (max-width: 599px){
+    .titleText_Art-Gallery{
+        height: 20%;
     }
 }
 .agBorderTopLeft{
@@ -334,12 +358,14 @@
 
 .text-untitled{
     position: relative;
-    font-size: 100px;
+    /* font-size: 100px; */
     font-weight: 500;
 
     top: -50px;
     opacity: 0;
     /* transition: 1.5s; */
+
+    transition: font-size .3s;
 }
 .text-untitled.active{
     top: 0;
@@ -354,15 +380,42 @@
     top: 50px;
     opacity: 0;
     /* transition: 1.5s; */
+
+    transition: font-size .3s;
 }
 .text-art-gallery.active{
     top: 0;
     opacity: 1;
     transition: 1.5s;
 }
-
 .text-space{
     width: 25px;
+}
+@media screen and (min-width: 600px){
+    .text-untitled{
+        font-size: 100px;
+    }
+    .text-art-gallery{
+        font-size: 100px;
+    }
+}
+@media (max-width: 599px){
+    .text-untitled{
+        font-size: 70px;
+        
+    }
+    .text-art-gallery{
+        font-size: 70px;
+    }
+}
+@media (max-width: 449px){
+    .text-untitled{
+        font-size: 50px;
+        
+    }
+    .text-art-gallery{
+        font-size: 50px;
+    }
 }
 
 
