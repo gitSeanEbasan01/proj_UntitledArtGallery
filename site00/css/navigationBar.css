@@ -51,6 +51,7 @@
     align-items: center;
 
     background-color: inherit;
+    transition: left .3s, font-size .3s;
 }
 .navTitle:hover{
     width: 254px;
@@ -65,6 +66,17 @@
         left: 50px;
     }
 }
+@media screen and (min-width: 400px) {
+    .navTitle{
+        font-size: 30px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle{
+        font-size: 20px;
+    }
+}
+
 
 
 .navTitle .cover{ 
@@ -95,6 +107,16 @@
     background-color: rgb(10, 10, 10);
     transition: background-color 1.5s, color 1.5s;
 }
+@media screen and (min-width: 400px) {
+    .navTitle > .U-{
+        width: 20px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .U-{
+        width: 13.5px;
+    }
+}
 .navArea.active .navTitle .U-{
     background-color: white;
     color: black;
@@ -121,6 +143,16 @@
     left: 20px;
     opacity: 1;
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
+}
+@media screen and (min-width: 400px) {
+    .navTitle:hover > .-ntitled{
+        left: 20px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle:hover > .-ntitled{
+        left: 13.5px;
+    }
 }
 .navTitle:not(:hover) > .-ntitled{
     /* left: 20px; */
@@ -159,9 +191,7 @@
 .navTitle > .A-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
     top: 0;
-    /* left: 112px; */
-    left: 20px;
-    width: 19px;
+    /* width: 19px; */
     height: 100%;
     z-index: 7;
     color: white;
@@ -175,15 +205,30 @@
     background-color: white;
 }
 .navTitle:hover > .A-{
-    /* left: 20px; */
-    left: 112px;
+    /* left: 112px; */
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .A-{
-    /* left: 112px; */
     left: 20px;
     transition: left .5s, background-color 1.5s, color 1.5s;
 }
+@media screen and (min-width: 400px) {
+    .navTitle > .A-{
+        width: 19px;
+    }
+    .navTitle:hover > .A-{
+        left: 112px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .A-{
+        width: 13.48px;
+    }
+    .navTitle:hover > .A-{
+        left: 74.2px;
+    }
+}
+
 
 .navTitle > .-rt{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
