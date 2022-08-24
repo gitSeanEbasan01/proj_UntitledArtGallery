@@ -41,7 +41,6 @@
 .navTitle{
     position: absolute;
     top: 10%;
-    /* left: 95px; */
     width: 63px;
     height: 80%;
     font-size: 30px;
@@ -49,6 +48,7 @@
 
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
 
     background-color: inherit;
     transition: left .3s, font-size .3s;
@@ -73,6 +73,7 @@
 }
 @media (max-width: 399px) {
     .navTitle{
+        left: 30px;
         font-size: 20px;
     }
 }
@@ -95,9 +96,9 @@
 }
 .navTitle > .U-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
-    width: 20px;
+    /* width: 20px; */
     height: 100%;
     z-index: 9;
 
@@ -109,11 +110,13 @@
 }
 @media screen and (min-width: 400px) {
     .navTitle > .U-{
+        top: 0;
         width: 20px;
     }
 }
 @media (max-width: 399px) {
     .navTitle > .U-{
+        top: 15%;
         width: 13.5px;
     }
 }
@@ -123,10 +126,9 @@
 }
 .navTitle > .-ntitled{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
-    /* left: 20px; */
-    left: -92px;
-    width: 92px;
+    /* top: 0; */
+    /* left: -92px; */
+    /* width: 92px; */
     height: 100%;
     z-index: 8;
     color: white;
@@ -140,35 +142,57 @@
 }
 .navTitle:hover > .-ntitled{
     /* left: -92px; */
-    left: 20px;
+    /* left: 20px; */
     opacity: 1;
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
-@media screen and (min-width: 400px) {
-    .navTitle:hover > .-ntitled{
-        left: 20px;
-    }
-}
-@media (max-width: 399px) {
-    .navTitle:hover > .-ntitled{
-        left: 13.5px;
-    }
-}
 .navTitle:not(:hover) > .-ntitled{
     /* left: 20px; */
-    left: -92px;
+    /* left: -92px; */
     opacity: 0;
     transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
 }
+@media screen and (min-width: 400px) {
+    .navTitle > .-ntitled{
+        top: 0;
+        width: 92px;
+    }
+    .navTitle:hover > .-ntitled{
+        left: 20px;
+    }
+    .navTitle:not(:hover) > .-ntitled{
+        left: -92px;
+    }
+    .navTitle .cover{
+        left: -92px;
+        width: 92px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .-ntitled{
+        top: 15%;
+        width: 60.7px;
+    }
+    .navTitle:hover > .-ntitled{
+        left: 13.5px;
+    }
+    .navTitle:not(:hover) > .-ntitled{
+        left: -60.7px;
+    }
+    .navTitle .cover{
+        left: -60.7px;
+        width: 60.7px;
+    }
+}
+
 
 
 
 .navTitle > .cover-art{
     position: absolute;
     top: 0;
-    /* left: 91px; */
-    left: -1px;
-    width: 21px;
+    /* left: -1px; */
+    /* width: 21px; */
     height: 100%;
     z-index: 7;
 
@@ -178,19 +202,40 @@
     background-color: white;
 }
 .navTitle:hover > .cover-art{
-    /* left: -1px; */
-    left: 91px;
+    /* left: 91px; */
     transition: left .6s ease-in-out .1s, background-color 1.5s;
 }
 .navTitle:not(:hover) > .cover-art{
-    /* left: 91px; */
-    left: -1px;
+    /* left: -1px; */
     transition: left .5s, background-color 1.5s;
 }
+@media screen and (min-width: 400px) {
+    .navTitle > .cover-art{
+        width: 21px;
+    }
+    .navTitle:hover > .cover-art{
+        left: 91px;
+    }
+    .navTitle:not(:hover) > .cover-art{
+        left: -1px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .cover-art{
+        width: 13.95px;
+    }
+    .navTitle:hover > .cover-art{
+        left: 60.25px;
+    }
+    .navTitle:not(:hover) > .cover-art{
+        left: -0.45px;
+    }
+}
+
 
 .navTitle > .A-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
+    /* top: 0; */
     /* width: 19px; */
     height: 100%;
     z-index: 7;
@@ -209,33 +254,40 @@
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .A-{
-    left: 20px;
+    /* left: 20px; */
     transition: left .5s, background-color 1.5s, color 1.5s;
 }
 @media screen and (min-width: 400px) {
     .navTitle > .A-{
+        top: 0;
         width: 19px;
     }
     .navTitle:hover > .A-{
         left: 112px;
     }
+    .navTitle:not(:hover) > .A-{
+        left: 20px;
+    }
 }
 @media (max-width: 399px) {
     .navTitle > .A-{
+        top: 15%;
         width: 13.48px;
     }
     .navTitle:hover > .A-{
         left: 74.2px;
+    }
+    .navTitle:not(:hover) > .A-{
+        left: 13.5px;
     }
 }
 
 
 .navTitle > .-rt{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
-    /* left: 131px; */
-    left: -1px;
-    width: 21px;
+    /* top: 0; */
+    /* left: -1px; */
+    /* width: 21px; */
     height: 100%;
     z-index: 6;
     color: white;
@@ -248,16 +300,38 @@
     background-color: white;
 }
 .navTitle:hover > .-rt{
-    /* left: -1px; */
-    left: 131px;
+    /* left: 131px; */
     opacity: 1;
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 .navTitle:not(:hover) > .-rt{
-    /* left: 131px; */
-    left: -1px;
+    /* left: -1px; */
     opacity: 0;
     transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
+}
+@media screen and (min-width: 400px) {
+    .navTitle > .-rt{
+        top: 0;
+        width: 21px;
+    }
+    .navTitle:hover > .-rt{
+        left: 131px;
+    }
+    .navTitle:not(:hover) > .-rt{
+        left: -1px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .-rt{
+        top: 15%;
+        width: 13.95px;
+    }
+    .navTitle:hover > .-rt{
+        left: 87.68px;
+    }
+    .navTitle:not(:hover) > .-rt{
+        left: -0.45px;
+    }
 }
 
 
@@ -267,9 +341,8 @@
 .navTitle > .cover-gallery{
     position: absolute;
     top: 0;
-    /* left: 74px; */
-    left: -39px;
-    width: 78px;
+    /* left: -39px; */
+    /* width: 78px; */
     height: 100%;
     z-index: 5;
 
@@ -279,22 +352,43 @@
     background-color: white;
 }
 .navTitle:hover > .cover-gallery{
-    /* left: -39px; */
-    left: 74px;
+    /* left: 74px; */
     transition: left .6s ease-in-out .1s, background-color 1.5s;
 }
 .navTitle:not(:hover) > .cover-gallery{
-    /* left: 74px; */
     left: -39px;
     transition: left .5s, background-color 1.5s;
 }
+@media screen and (min-width: 400px) {
+    .navTitle > .cover-gallery{
+        width: 78px;
+    }
+    .navTitle:hover > .cover-gallery{
+        left: 74px;
+    }
+    .navTitle:not(:hover) > .cover-gallery{
+        left: -39px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .cover-gallery{
+        width: 51.84px;
+    }
+    .navTitle:hover > .cover-gallery{
+        left: 49.79px;
+    }
+    .navTitle:not(:hover) > .cover-gallery{
+        left: -24.86px;
+    }
+}
+
+
 
 .navTitle > .G-{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
-    /* left: 152px; */
-    left: 39px;
-    width: 24px;
+    /* top: 0; */
+    /* left: 39px; */
+    /* width: 24px; */
     height: 100%;
     z-index: 5;
     color: white;
@@ -308,22 +402,43 @@
     background-color: white;
 }
 .navTitle:hover > .G-{
-    /* left: 39px; */
-    left: 152px;
+    /* left: 152px; */
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s;
 }
 .navTitle:not(:hover) > .G-{
-    /* left: 152px; */
-    left: 39px;
+    /* left: 39px; */
     transition: left .5s, background-color 1.5s, color 1.5s;
+}
+@media screen and (min-width: 400px) {
+    .navTitle > .G-{
+        top: 0;
+        width: 24px;
+    }
+    .navTitle:hover > .G-{
+        left: 152px;
+    }
+    .navTitle:not(:hover) > .G-{
+        left: 39px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .G-{
+        top: 15%;
+        width: 15.56px;
+    }
+    .navTitle:hover > .G-{
+        left: 101.63px;
+    }
+    .navTitle:not(:hover) > .G-{
+        left: 26.98px;
+    }
 }
 
 .navTitle > .-allery{ /* ------------------------------------- beginningEnd ------------------------------------- */
     position: absolute;
-    top: 0;
-    /* left: 176px; */
-    left: -39px;
-    width: 78px;
+    /* top: 0; */
+    /* left: -39px; */
+    /* width: 78px; */
     height: 100%;
     z-index: 4;
     color: white;
@@ -336,16 +451,38 @@
     background-color: white;
 }
 .navTitle:hover > .-allery{
-    /* left: -39px; */
-    left: 176px;
+    /* left: 176px; */
     opacity: 1;
     transition: left .6s ease-in-out .1s, background-color 1.5s, color 1.5s, opacity 1s;
 }
 .navTitle:not(:hover) > .-allery{
-    /* left: 176px; */
-    left: -39px;
+    /* left: -39px; */
     opacity: 0;
     transition: left .5s, background-color 1.5s, color 1.5s, opacity 1s;
+}
+@media screen and (min-width: 400px) {
+    .navTitle > .-allery{
+        top: 0;
+        width: 78px;
+    }
+    .navTitle:hover > .-allery{
+        left: 176px;
+    }
+    .navTitle:not(:hover) > .-allery{
+        left: -39px;
+    }
+}
+@media (max-width: 399px) {
+    .navTitle > .-allery{
+        top: 15%;
+        width: 51.84px;
+    }
+    .navTitle:hover > .-allery{
+        left: 117.19px;
+    }
+    .navTitle:not(:hover) > .-allery{
+        left: -24.86px;
+    }
 }
 
 
