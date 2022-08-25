@@ -453,7 +453,7 @@
     position: absolute;
     top: 30%;
     left: 0;
-    width: 40%;
+    width: 55%;
     height: 19%;
 
     display: flex;
@@ -466,17 +466,30 @@
     opacity: 0;
     
     padding-left: 5%;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 400;
 
-    /* color: rgb(77, 77, 77); */
-    /* color: white; */
     color: rgb(200, 200, 200);
 }
 .description.active > p{
     top: 0;
     opacity: 1;
-    transition: 1s ease-in-out 2s;
+    transition: top 1s ease-in-out 2s, opacity 1s ease-in-out 2s;
+}
+@media screen and (min-width: 500px) {
+    .description > p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .description > p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 370px) {
+    .description > p{
+        font-size: 10px;
+    }
 }
 
 
@@ -520,7 +533,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-    width: 30%;
+    width: 40%;
     height: 20%;
 
     display: flex;
@@ -533,10 +546,9 @@
     opacity: 0;
     
     padding-right: 5%;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 400;
 
-    /* color: rgb(77, 77, 77); */
     color: rgb(200, 200, 200);
 }
 .name > p > span{
@@ -545,7 +557,22 @@
 .name.active > p{
     top: 0;
     opacity: 1;
-    transition: 1s ease-in-out 2.5s;
+    transition: top 1s ease-in-out 2.5s, opacity 1s ease-in-out 2.5s;
+}
+@media screen and (min-width: 500px) {
+    .name > p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .name > p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 370px) {
+    .name > p{
+        font-size: 10px;
+    }
 }
 
 
