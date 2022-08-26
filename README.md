@@ -4,9 +4,12 @@ This project will be used for my portfolio. <br />
 I'll be utilizing the few things I learned in Web Development in the past few months of grinding.
 https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 
+**projectUpdate082622:** <br />
+- [Goal] Review and analyze CSS and JavaScript in gallerySwipe for the implementation of Media Query as well as a reunderstanding of your own code.
+
 **projectUpdate082222:** <br />
 - [Done] Media query in navBar is finished along with the hamburger button.
-- [Issue] Work on media query for the titleSection.
+- [Done] Work on media query for the titleSection.
 
 **projectUpdate081222:** <br />
 - [Done] Able to add media query for navCategoryContainer. Separating in both active and non-active element.
