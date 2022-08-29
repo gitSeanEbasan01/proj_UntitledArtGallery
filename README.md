@@ -6,6 +6,7 @@ https://gitseanebasan01.github.io/proj_UntitledArtGallery/site00/
 
 **projectUpdate082622:** <br />
 - [Goal] Review and analyze CSS and JavaScript in gallerySwipe for the implementation of Media Query as well as a reunderstanding of your own code.
+- [Issue] gallerySwipe doesn't work on mobile device oof. Need to work on that as well.
 
 **projectUpdate082222:** <br />
 - [Done] Media query in navBar is finished along with the hamburger button.
